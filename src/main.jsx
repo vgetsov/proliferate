@@ -8,6 +8,8 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import './index.css'
 
+import { BrowserRouter } from 'react-router-dom'
+
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -17,22 +19,24 @@ const darkTheme = createTheme({
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HelmetProvider>
-      <ThemeProvider theme={darkTheme}>
-        <CssBaseline />
-        <ToastContainer
-          position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="dark"
-        />
-        <App />
-      </ThemeProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={darkTheme}>
+          <CssBaseline />
+          <ToastContainer
+            position="top-center"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
+          <App />
+        </ThemeProvider>
+      </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>
 )
