@@ -1,20 +1,8 @@
-import {
-  AppBar,
-  Box,
-  Toolbar,
-  //   IconButton,
-  Typography,
-  //   Menu,
-  Container,
-  //   Avatar,
-  Button,
-  //   Tooltip,
-  //   MenuItem,
-  //   Link,
-} from '@mui/material'
+import { AppBar, Box, Toolbar, Typography, Container, Button } from '@mui/material'
 import { NavLink } from 'react-router-dom'
-import './Navbar.css'
 import { LOGO_URL, LOG_IN, LOG_OUT, MY_CARDS, MY_PROFILE, SIGN_UP } from '../../common/constants'
+
+import './Navbar.scss'
 
 export const Navbar = () => {
   return (

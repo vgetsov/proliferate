@@ -16,3 +16,6 @@ export const PASSWORD_ERROR_MESSAGE = `Password must be at least ${PASSWORD_MIN_
 export const EMAIL_PATTERN = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/i
 export const EMAIL_REQUIRED = 'Email is required'
 export const EMAIL_ERROR_MESSAGE = 'Invalid email address'
+
+export const WELCOMING_MESSAGE =
+  'Welcome to Proliferate - a simple SPA project for rendering Magic: The Gathering cards and performing CRUD operations'

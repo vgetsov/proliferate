@@ -18,13 +18,19 @@ import {
   PASSWORD_REQUIRED,
 } from '../../common/constants'
 import AccountBoxIcon from '@mui/icons-material/AccountBox'
+import { toast } from 'react-toastify'
 
 export const LogIn = () => {
   const {
     register,
-    // handleSubmit,
+    handleSubmit,
     formState: { errors },
   } = useForm()
+
+  const onLogin = (data) => {
+    toast.error('Missing implementation')
+    console.log(data)
+  }
 
   //   const onLogin = ({ email, password }) => {
   //     try {
@@ -84,8 +90,7 @@ export const LogIn = () => {
             <Typography component="h1" variant="h5">
               {LOG_IN_PROLIFERATE}
             </Typography>
-            <Box component="form" noValidate sx={{ mt: 3 }}>
-              {/* onSubmit missing */}
+            <Box component="form" onSubmit={handleSubmit(onLogin)} noValidate sx={{ mt: 3 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <TextField

@@ -13,6 +13,7 @@ import {
   SIGN_UP,
   SIGN_UP_PROLIFERATE,
 } from '../../common/constants'
+import { toast } from 'react-toastify'
 
 // import { createUser, getUserByEmail } from '../../services/users.services'
 // import { registerUser } from '../../services/auth.services'
@@ -28,9 +29,14 @@ export const SignUp = () => {
 
   const {
     register,
-    // handleSubmit,
+    handleSubmit,
     formState: { errors },
   } = useForm()
+
+  const onSubmit = (data) => {
+    toast.error('Missing implementation')
+    console.log(data)
+  }
 
   // const onSubmit = async ({ firstName, lastName, email, password }) => {
   //   getUserByEmail(email)
@@ -81,8 +87,7 @@ export const SignUp = () => {
             <Typography component="h1" variant="h5">
               {SIGN_UP_PROLIFERATE}
             </Typography>
-            <Box component="form" noValidate sx={{ mt: 3 }}>
-              {/* onSubmit={handleSubmit(onSubmit)} */}
+            <Box component="form" onSubmit={handleSubmit(onSubmit)} noValidate sx={{ mt: 3 }}>
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <TextField
