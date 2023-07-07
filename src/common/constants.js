@@ -19,3 +19,9 @@ export const EMAIL_ERROR_MESSAGE = 'Invalid email address'
 
 export const WELCOMING_MESSAGE =
   'Welcome to Proliferate - a simple SPA project for rendering Magic: The Gathering cards and performing CRUD operations'
+
+export const EDHREC_BTN_TEXT = 'Card analysis on EDHREC'
+export const EDIT = 'Edit'
+export const DELETE = 'Delete'
+
+export const PRICE_TEXT = 'Price: €'

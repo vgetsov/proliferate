@@ -1,10 +1,3 @@
-import { Box, Container, Typography } from '@mui/material'
-import { Helmet } from 'react-helmet-async'
-import { WELCOMING_MESSAGE } from '../../common/constants'
-import { CustomCard } from '../CustomCard/CustomCard'
-
-import './Home.scss'
-
 const cards = [
   {
     object: 'card',
@@ -1054,36 +1047,4 @@ const cards = [
   },
 ]
 
-export const Home = () => {
-  return (
-    <>
-      <Helmet>
-        <title>Proliferate - Home</title>
-      </Helmet>
-      <>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <Container className="welcoming-message-container">
-            <Typography variant="h6" sx={{ fontFamily: 'Lato' }}>
-              {WELCOMING_MESSAGE}
-            </Typography>
-          </Container>
-        </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
-          {cards.map(({ id, name, image_uris, type_line, oracle_text, power, toughness, related_uris, prices }) => (
-            <CustomCard
-              key={id}
-              name={name}
-              image={image_uris.border_crop}
-              cardType={type_line}
-              effect={oracle_text}
-              power={power}
-              toughness={toughness}
-              edhrec_link={related_uris.edhrec}
-              price={prices.eur}
-            />
-          ))}
-        </Box>
-      </>
-    </>
-  )
-}
+console.log(cards)
