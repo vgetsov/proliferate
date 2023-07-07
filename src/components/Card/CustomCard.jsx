@@ -60,8 +60,8 @@ CustomCard.propTypes = {
   image: PropTypes.string.isRequired,
   cardType: PropTypes.string.isRequired,
   effect: PropTypes.string.isRequired,
-  power: PropTypes.string.isRequired,
-  toughness: PropTypes.string.isRequired,
+  power: PropTypes.string,
+  toughness: PropTypes.string,
   edhrec_link: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.string,
 }
