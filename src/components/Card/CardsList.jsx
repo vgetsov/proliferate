@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import { CustomCard } from './CustomCard'
 import { useEffect, useState } from 'react'
+import { ALL_CARDS_URL } from '../../common/constants'
 
 export const CardsList = () => {
   const [cards, setCards] = useState()
@@ -9,7 +10,7 @@ export const CardsList = () => {
   useEffect(() => {
     const fetchCards = async () => {
       setIsLoading(true)
-      const response = await fetch(`http://localhost:3000/cards`)
+      const response = await fetch(ALL_CARDS_URL)
       const data = await response.json()
       setCards(data)
       setIsLoading(false)
@@ -27,6 +28,7 @@ export const CardsList = () => {
         : cards.map(({ id, name, image_uris, type_line, oracle_text, power, toughness, related_uris, prices }) => (
             <CustomCard
               key={id}
+              id={id}
               name={name}
               image={image_uris.border_crop}
               cardType={type_line}

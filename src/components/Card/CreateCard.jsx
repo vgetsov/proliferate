@@ -3,6 +3,7 @@ import { Avatar, Button, TextField, Grid, Box, Typography, Container } from '@mu
 import { useForm } from 'react-hook-form'
 import { ChatBubble } from '@mui/icons-material'
 import {
+  ALL_CARDS_URL,
   CARDNAME_MAX_LENGTH,
   CARDNAME_MAX_LENGTH_MESSAGE,
   CARDNAME_MIN_LENGTH,
@@ -44,7 +45,7 @@ export const CreateCard = () => {
     try {
       setIsLoading(true)
 
-      const createNewCardData = await fetch(`http://localhost:3000/cards`, {
+      const createNewCardData = await fetch(ALL_CARDS_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -65,7 +66,7 @@ export const CreateCard = () => {
         }),
       })
 
-      console.log(createNewCardData)
+      console.log(createNewCardData) // TODO
 
       toast.success('Card created successfully')
 

@@ -6,11 +6,26 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
 
-import { DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
+import { ALL_CARDS_URL, DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
 
 import './CustomCard.scss'
+import { toast } from 'react-toastify'
 
-export const CustomCard = ({ name, image, cardType, effect, power, toughness, edhrec_link, price }) => {
+export const CustomCard = ({ id, name, image, cardType, effect, power, toughness, edhrec_link, price }) => {
+  const onDelete = async (id) => {
+    try {
+      const removeCardData = await fetch(`${ALL_CARDS_URL}/${id}`, {
+        method: 'DELETE',
+      })
+
+      console.log(removeCardData) // TODO refetch all cards IMMEDIATELY
+
+      toast.info('Card deleted successfully')
+    } catch (error) {
+      toast.error(error.message)
+    }
+  }
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={name} height="480" image={image} />
@@ -47,7 +62,7 @@ export const CustomCard = ({ name, image, cardType, effect, power, toughness, ed
         <Button variant="outlined" size="small">
           {EDIT}
         </Button>
-        <Button variant="outlined" size="small" color="error">
+        <Button variant="outlined" onClick={() => onDelete(id)} size="small" color="error">
           {DELETE}
         </Button>
       </CardActions>
@@ -56,6 +71,7 @@ export const CustomCard = ({ name, image, cardType, effect, power, toughness, ed
 }
 
 CustomCard.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   cardType: PropTypes.string.isRequired,

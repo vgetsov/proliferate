@@ -1,5 +1,7 @@
 export const LOGO_URL = 'https://svgshare.com/i/upt.svg'
 
+export const ALL_CARDS_URL = `http://localhost:3000/cards`
+
 export const MY_PROFILE = 'My profile'
 export const MY_CARDS = 'My cards'
 
