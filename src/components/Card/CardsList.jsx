@@ -19,7 +19,7 @@ export const CardsList = () => {
   }, [])
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
       {isLoading
         ? 'Loading...'
         : cards === undefined

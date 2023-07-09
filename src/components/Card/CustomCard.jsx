@@ -39,7 +39,7 @@ export const CustomCard = ({ name, image, cardType, effect, power, toughness, ed
         )}
       </CardContent>
       <CardActions className="edhrec-action-btn-wrapper">
-        <Button component="a" href={edhrec_link} target="_blank" variant="outlined" size="small" color="success">
+        <Button component="a" href={edhrec_link} target="_blank" variant="outlined" size="small" color="secondary">
           {EDHREC_BTN_TEXT}
         </Button>
       </CardActions>

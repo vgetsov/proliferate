@@ -26,7 +26,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979"
       },
       "mana_cost": "{5}{R}",
-      "cmc": 6.0,
+      "cmc": 6,
       "type_line": "Creature — Sliver",
       "oracle_text": "All Sliver creatures have double strike.",
       "power": "3",
@@ -71,10 +71,10 @@
       "set_name": "Time Spiral",
       "set_type": "expansion",
       "set_uri": "https://api.scryfall.com/sets/c1d109bc-ffd8-428f-8d7d-3f8d7e648046",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Atsp\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atsp&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/tsp?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/0000579f-7b35-4ed3-b44c-db2a538066fe/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A44623693-51d6-49ad-8cd7-140505caf02f\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A44623693-51d6-49ad-8cd7-140505caf02f&unique=prints",
       "collector_number": "157",
       "digital": false,
       "rarity": "uncommon",
@@ -101,8 +101,8 @@
       },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=109722",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Fury+Sliver\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Fury+Sliver\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Fury+Sliver&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Fury+Sliver&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Fury+Sliver"
       }
     },
@@ -132,7 +132,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251"
       },
       "mana_cost": "{W}{W}",
-      "cmc": 2.0,
+      "cmc": 2,
       "type_line": "Creature — Kor Soldier",
       "oracle_text": "When Kor Outfitter enters the battlefield, you may attach target Equipment you control to target creature you control.",
       "power": "2",
@@ -177,10 +177,10 @@
       "set_name": "Zendikar",
       "set_type": "expansion",
       "set_uri": "https://api.scryfall.com/sets/eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Azen\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Azen&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/zen?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/00006596-1166-4a79-8443-ca9f82e6db4e/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A8ae3562f-28b7-4462-96ed-be0cf7052ccc\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A8ae3562f-28b7-4462-96ed-be0cf7052ccc&unique=prints",
       "collector_number": "21",
       "digital": false,
       "rarity": "common",
@@ -207,8 +207,8 @@
       },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=189637",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Kor+Outfitter\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Kor+Outfitter\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Kor+Outfitter&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Kor+Outfitter&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Kor+Outfitter"
       }
     },
@@ -239,7 +239,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609"
       },
       "mana_cost": "{2}{U}",
-      "cmc": 3.0,
+      "cmc": 3,
       "type_line": "Creature — Siren Pirate",
       "oracle_text": "Flying\nWhen Siren Lookout enters the battlefield, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)",
       "power": "1",
@@ -284,10 +284,10 @@
       "set_name": "Ixalan",
       "set_type": "expansion",
       "set_uri": "https://api.scryfall.com/sets/fe0dad85-54bc-4151-9200-d68da84dd0f2",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Axln\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Axln&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/xln?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/0000cd57-91fe-411f-b798-646e965eec37/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A9f0d82ae-38bf-45d8-8cda-982b6ead1d72\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A9f0d82ae-38bf-45d8-8cda-982b6ead1d72&unique=prints",
       "collector_number": "78",
       "digital": false,
       "rarity": "common",
@@ -313,8 +313,8 @@
       },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=435231",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Siren+Lookout\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Siren+Lookout\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Siren+Lookout&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Siren+Lookout&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Siren+Lookout"
       }
     },
@@ -344,7 +344,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814"
       },
       "mana_cost": "{W}",
-      "cmc": 1.0,
+      "cmc": 1,
       "type_line": "Creature — Human Knight",
       "oracle_text": "When Venerable Knight dies, put a +1/+1 counter on target Knight you control.",
       "power": "2",
@@ -389,10 +389,10 @@
       "set_name": "Throne of Eldraine",
       "set_type": "expansion",
       "set_uri": "https://api.scryfall.com/sets/a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Aeld\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aeld&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/eld?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/0001f1ef-b957-4a55-b47f-14839cdbab6f/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3Aef027846-be81-4959-a6b5-56bd01b1e68a\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aef027846-be81-4959-a6b5-56bd01b1e68a&unique=prints",
       "collector_number": "35",
       "digital": false,
       "rarity": "uncommon",
@@ -424,8 +424,8 @@
       },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=472997",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Venerable+Knight\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Venerable+Knight\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Venerable+Knight&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Venerable+Knight&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Venerable+Knight"
       }
     },
@@ -453,7 +453,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/00020b05-ecb9-4603-8cc1-8cfa7a14befc.jpg?1562633475"
       },
       "mana_cost": "{X}{G}{G}",
-      "cmc": 2.0,
+      "cmc": 2,
       "type_line": "Sorcery",
       "oracle_text": "Manifest the top card of your library, then put X +1/+1 counters on it. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)",
       "colors": ["G"],
@@ -496,10 +496,10 @@
       "set_name": "Ugin's Fate",
       "set_type": "promo",
       "set_uri": "https://api.scryfall.com/sets/fc7ea025-628e-45f4-9e0b-73681b1f68b7",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Augin\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Augin&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/ugin?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/00020b05-ecb9-4603-8cc1-8cfa7a14befc/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3Ad96ac790-428b-4a64-8dbd-6baa73eb6210\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Ad96ac790-428b-4a64-8dbd-6baa73eb6210&unique=prints",
       "collector_number": "146",
       "digital": false,
       "rarity": "rare",
@@ -518,11 +518,18 @@
       "promo_types": ["setpromo"],
       "edhrec_rank": 18475,
       "penny_rank": 11084,
-      "prices": { "usd": "2.36", "usd_foil": null, "usd_etched": null, "eur": "2.15", "eur_foil": null, "tix": null },
+      "prices": {
+        "usd": "2.36",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": "2.15",
+        "eur_foil": null,
+        "tix": null
+      },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=394089",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Wildcall\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Wildcall\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Wildcall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Wildcall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Wildcall"
       }
     },
@@ -552,7 +559,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0002ab72-834b-4c81-82b1-0d2760ea96b0.jpg?1596250027"
       },
       "mana_cost": "{2}{U}",
-      "cmc": 3.0,
+      "cmc": 3,
       "type_line": "Creature — Fish",
       "oracle_text": "Whenever you draw your second card each turn, Mystic Skyfish gains flying until end of turn.",
       "power": "3",
@@ -597,10 +604,10 @@
       "set_name": "Core Set 2021",
       "set_type": "core",
       "set_uri": "https://api.scryfall.com/sets/bc94aba1-7376-4e02-a12d-3a2efb66ab0f",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Am21\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Am21&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/m21?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/0002ab72-834b-4c81-82b1-0d2760ea96b0/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A645b5784-a6f7-4cf3-966a-e1a51420b96b\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A645b5784-a6f7-4cf3-966a-e1a51420b96b&unique=prints",
       "collector_number": "326",
       "digital": false,
       "rarity": "common",
@@ -622,11 +629,18 @@
         "source_uri": "https://www.cbr.com/magic-the-gathering-planeswalker-decks-core-set-2021/",
         "previewed_at": "2020-06-05"
       },
-      "prices": { "usd": "0.12", "usd_foil": null, "usd_etched": null, "eur": "0.15", "eur_foil": null, "tix": "0.19" },
+      "prices": {
+        "usd": "0.12",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": "0.15",
+        "eur_foil": null,
+        "tix": "0.19"
+      },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=488632",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Mystic+Skyfish\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Mystic+Skyfish\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Mystic+Skyfish&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Mystic+Skyfish&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Mystic+Skyfish"
       }
     },
@@ -655,7 +669,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/00030770-5e99-4943-819d-8d807c24cc14.jpg?1600716281"
       },
       "mana_cost": "",
-      "cmc": 0.0,
+      "cmc": 0,
       "type_line": "Basic Land — Swamp",
       "oracle_text": "({T}: Add {B}.)",
       "colors": [],
@@ -699,10 +713,10 @@
       "set_name": "Jumpstart",
       "set_type": "draft_innovation",
       "set_uri": "https://api.scryfall.com/sets/0f6ccf25-a627-4263-86df-5757137f1696",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Ajmp\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ajmp&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/jmp?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/00030770-5e99-4943-819d-8d807c24cc14/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A56719f6a-1a6c-4c0a-8d21-18f7d7350b68\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A56719f6a-1a6c-4c0a-8d21-18f7d7350b68&unique=prints",
       "collector_number": "59",
       "digital": false,
       "rarity": "common",
@@ -721,11 +735,18 @@
         "source_uri": "https://www.gamestar.de/galerien/magic_the_gathering_jumpstart,134800.html",
         "previewed_at": "2020-06-17"
       },
-      "prices": { "usd": "0.17", "usd_foil": null, "usd_etched": null, "eur": "0.10", "eur_foil": null, "tix": null },
+      "prices": {
+        "usd": "0.17",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": "0.10",
+        "eur_foil": null,
+        "tix": null
+      },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=489643",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Swamp\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Swamp\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Swamp&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Swamp&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Swamp"
       }
     },
@@ -755,7 +776,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662"
       },
       "mana_cost": "{1}{U}",
-      "cmc": 2.0,
+      "cmc": 2,
       "type_line": "Creature — Bird Wizard",
       "oracle_text": "Kicker {R} (You may pay an additional {R} as you cast this spell.)\nFlying\nWhen Battlewing Mystic enters the battlefield, if it was kicked, discard your hand, then draw two cards.",
       "power": "2",
@@ -800,10 +821,10 @@
       "set_name": "Dominaria United",
       "set_type": "expansion",
       "set_uri": "https://api.scryfall.com/sets/4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Admu\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Admu&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/dmu?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/000376ef-8b6c-490d-98cb-d6de15b2e585/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A49f0b317-6b06-482e-ab64-e02713e6c7e8\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A49f0b317-6b06-482e-ab64-e02713e6c7e8&unique=prints",
       "collector_number": "43",
       "digital": false,
       "rarity": "uncommon",
@@ -834,8 +855,8 @@
       },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=574523",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Battlewing+Mystic\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Battlewing+Mystic\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Battlewing+Mystic&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Battlewing+Mystic&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Battlewing+Mystic"
       }
     },
@@ -865,7 +886,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/00042443-4d4e-4087-b4e5-5e781e7cc5fa.jpg?1562894988"
       },
       "mana_cost": "{2}{B}",
-      "cmc": 3.0,
+      "cmc": 3,
       "type_line": "Creature — Snake Wall",
       "oracle_text": "Defender (This creature can't attack.)\n{3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.",
       "power": "2",
@@ -910,10 +931,10 @@
       "set_name": "Prophecy",
       "set_type": "expansion",
       "set_uri": "https://api.scryfall.com/sets/c233bd36-57c0-4aa2-ae6c-7aeabfb4e3ce",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Apcy\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Apcy&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/pcy?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/00042443-4d4e-4087-b4e5-5e781e7cc5fa/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A4fcfe370-ba33-438f-bd96-2ae560f59df9\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A4fcfe370-ba33-438f-bd96-2ae560f59df9&unique=prints",
       "collector_number": "80",
       "digital": false,
       "rarity": "uncommon",
@@ -939,8 +960,8 @@
       },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=24609",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Wall+of+Vipers\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Wall+of+Vipers\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Wall+of+Vipers&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Wall+of+Vipers&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Wall+of+Vipers"
       }
     },
@@ -968,7 +989,7 @@
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0005c844-787c-4f0c-8d25-85cec151642b.jpg?1592710235"
       },
       "mana_cost": "{5}{G}",
-      "cmc": 6.0,
+      "cmc": 6,
       "type_line": "Creature — Lizard Hydra",
       "oracle_text": "Reach\nWhen Whiptongue Hydra enters the battlefield, destroy all creatures with flying. Put a +1/+1 counter on Whiptongue Hydra for each creature destroyed this way.",
       "power": "4",
@@ -1013,10 +1034,10 @@
       "set_name": "Commander 2018",
       "set_type": "commander",
       "set_uri": "https://api.scryfall.com/sets/06ce6bc2-85cd-4cca-85b1-8c620d3e0902",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set\u0026q=e%3Ac18\u0026unique=prints",
+      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ac18&unique=prints",
       "scryfall_set_uri": "https://scryfall.com/sets/c18?utm_source=api",
       "rulings_uri": "https://api.scryfall.com/cards/0005c844-787c-4f0c-8d25-85cec151642b/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A53d5d961-d6a3-49b1-b335-2c2b49972008\u0026unique=prints",
+      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A53d5d961-d6a3-49b1-b335-2c2b49972008&unique=prints",
       "collector_number": "36",
       "digital": false,
       "rarity": "rare",
@@ -1033,13 +1054,37 @@
       "booster": false,
       "story_spotlight": false,
       "edhrec_rank": 4104,
-      "prices": { "usd": "0.61", "usd_foil": null, "usd_etched": null, "eur": "0.88", "eur_foil": null, "tix": null },
+      "prices": {
+        "usd": "0.61",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": "0.88",
+        "eur_foil": null,
+        "tix": null
+      },
       "related_uris": {
         "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=450637",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Whiptongue+Hydra\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Whiptongue+Hydra\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall",
+        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Whiptongue+Hydra&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Whiptongue+Hydra&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Whiptongue+Hydra"
       }
+    },
+    {
+      "name": "Decree of Annihilation",
+      "image_uris": {
+        "border_crop": "https://cards.scryfall.io/border_crop/front/7/3/73744717-518c-478e-9da9-201c49124f37.jpg?1562530626"
+      },
+      "type_line": "Sorcery",
+      "oracle_text": "Exile all artifacts, creatures, and lands from the battlefield, all cards from all graveyards, and all cards from all hands.  Cycling {5}{R}{R} ({5}{R}{R}, Discard this card: Draw a card.)  When you cycle Decree of Annihilation, destroy all lands.",
+      "power": "0",
+      "toughness": "0",
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Decree+of+Annihilation"
+      },
+      "prices": {
+        "eur": "1.49"
+      },
+      "id": "nxbgHzG"
     }
   ]
 }

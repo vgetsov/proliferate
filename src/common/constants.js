@@ -21,7 +21,43 @@ export const WELCOMING_MESSAGE =
   'Welcome to Proliferate - a simple SPA project for rendering Magic: The Gathering cards and performing CRUD operations'
 
 export const EDHREC_BTN_TEXT = 'Card analysis on EDHREC'
+export const CREATE_A_CARD = 'Create a card'
 export const EDIT = 'Edit'
 export const DELETE = 'Delete'
 
 export const PRICE_TEXT = 'Price: €'
+
+export const CARDNAME_REQUIRED = 'Name is required'
+
+export const CARDNAME_MIN_LENGTH = 3
+export const CARDNAME_MIN_LENGTH_MESSAGE = `Must be at least ${CARDNAME_MIN_LENGTH} symbols`
+
+export const CARDNAME_MAX_LENGTH = 200
+export const CARDNAME_MAX_LENGTH_MESSAGE = `Must be at most ${CARDNAME_MAX_LENGTH} symbols`
+
+export const URL_PATTERN = /^(?:(?:https?|ftp):\/\/)?(?:www\.)?(?:[a-zA-Z0-9-]+\.)+(?:[a-zA-Z]{2,})(?:\/[^\s]*)?$/i
+export const URL_PATTERN_REQUIRED = 'Image URL is required'
+export const URL_PATTERN_MESSAGE = 'Invalid URL provided'
+
+export const CARD_TYPE_REQUIRED = 'Card type is required'
+
+export const CARD_TYPE_MIN_LENGTH = 6
+export const CARD_TYPE_MIN_LENGTH_MESSAGE = `Must be at least ${CARD_TYPE_MIN_LENGTH} symbols`
+
+export const CARD_TYPE_MAX_LENGTH = 100
+export const CARD_TYPE_MAX_LENGTH_MESSAGE = `Must be at most ${CARD_TYPE_MAX_LENGTH} symbols`
+
+export const EFFECT_REQUIRED = 'Effect is required'
+
+export const EFFECT_MIN_LENGTH = 0
+export const EFFECT_MIN_LENGTH_MESSAGE = `Must be at least ${EFFECT_MIN_LENGTH} symbols`
+
+export const EFFECT_MAX_LENGTH = 2000
+export const EFFECT_MAX_LENGTH_MESSAGE = `Must be at most ${EFFECT_MAX_LENGTH} symbols`
+
+export const POWER_REQUIRED = 'Power is required only for creatures'
+
+export const TOUGHNESS_REQUIRED = 'Toughness is required for creatures'
+
+export const EDHREC_LINK_REQUIRED = 'EDHREC link is required'
+export const EDHREC_LINK_PATTERN_MESSAGE = 'Enter a valid EDHREC link'
