@@ -6,16 +6,22 @@ import { ALL_CARDS_URL } from '../../common/constants'
 export const CardsList = () => {
   const [cards, setCards] = useState()
   const [isLoading, setIsLoading] = useState(false)
+  const [isError, setIsError] = useState(false)
 
   const fetchCards = useCallback(async () => {
     setIsLoading(true)
 
-    const response = await fetch(ALL_CARDS_URL)
+    try {
+      const response = await fetch(ALL_CARDS_URL)
 
-    const data = await response.json()
-    setCards(data)
+      const data = await response.json()
 
-    setIsLoading(false)
+      setCards(data)
+    } catch (error) {
+      setIsError(true)
+    } finally {
+      setIsLoading(false)
+    }
   }, [])
 
   useEffect(() => {
@@ -24,7 +30,9 @@ export const CardsList = () => {
 
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
-      {isLoading
+      {isError
+        ? 'Failed to load cards'
+        : isLoading
         ? 'Loading...'
         : cards === undefined
         ? 'Cards not fetched yet'

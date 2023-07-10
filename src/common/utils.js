@@ -7,7 +7,7 @@ export const onDelete = async ({ id, onSuccessCallback }) => {
       method: 'DELETE',
     })
 
-    console.log(removeCardData) // TODO refetch all cards IMMEDIATELY
+    console.log(removeCardData)
 
     toast.info('Card deleted successfully')
 
