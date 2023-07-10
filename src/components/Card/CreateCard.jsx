@@ -255,7 +255,7 @@ export const CreateCard = () => {
                 variant="contained"
                 sx={{ mt: 3, mb: 2, bgcolor: '#40a798' }}
               >
-                {isLoading ? 'Loading...' : 'Create card'}
+                {isLoading ? 'Creating...' : 'Create card'}
               </Button>
             </Box>
           </Box>

@@ -8,6 +8,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 import { BrowserRouter } from 'react-router-dom'
+import { ConfirmProvider } from 'material-ui-confirm'
 
 const darkTheme = createTheme({
   palette: {
@@ -22,20 +23,22 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HelmetProvider>
       <BrowserRouter>
         <ThemeProvider theme={responsiveTheme}>
-          <CssBaseline />
-          <ToastContainer
-            position="top-center"
-            autoClose={3000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="dark"
-          />
-          <App />
+          <ConfirmProvider>
+            <CssBaseline />
+            <ToastContainer
+              position="top-center"
+              autoClose={3000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="dark"
+            />
+            <App />
+          </ConfirmProvider>
         </ThemeProvider>
       </BrowserRouter>
     </HelmetProvider>

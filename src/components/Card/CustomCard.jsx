@@ -10,8 +10,25 @@ import { onDelete } from '../../common/utils'
 import { DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
 
 import './CustomCard.scss'
+import { useConfirm } from 'material-ui-confirm'
+import { useState } from 'react'
 
 export const CustomCard = ({ id, name, image, cardType, effect, power, toughness, edhrec_link, price, fetchCards }) => {
+  const [isLoading, setIsLoading] = useState()
+  const confirm = useConfirm()
+
+  const onDeleteButtonClick = () => {
+    confirm({ title: `Delete ${name}`, description: 'Are you sure you want to delete this card?' })
+      .then(async () => {
+        setIsLoading(true)
+
+        await onDelete({ id, onSuccessCallback: fetchCards })
+
+        setIsLoading(false)
+      })
+      .catch(() => {})
+  }
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={name} height="480" image={image} />
@@ -46,13 +63,8 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
         <Button variant="outlined" size="small">
           {EDIT}
         </Button>
-        <Button
-          variant="outlined"
-          onClick={() => onDelete({ id, onSuccessCallback: fetchCards })}
-          size="small"
-          color="error"
-        >
-          {DELETE}
+        <Button variant="outlined" disabled={isLoading} onClick={onDeleteButtonClick} size="small" color="error">
+          {isLoading ? 'Deleting...' : DELETE}
         </Button>
       </CardActions>
     </Card>
