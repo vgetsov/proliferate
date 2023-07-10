@@ -31,7 +31,7 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
 
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" alt={name} height="480" image={image} />
+      <CardMedia component="img" alt={name} image={image} />
       <CardContent className="card-content-wrapper">
         <Typography gutterBottom variant="h5" component="div">
           {name}

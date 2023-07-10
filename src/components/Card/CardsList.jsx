@@ -3,6 +3,7 @@ import { CustomCard } from './CustomCard'
 import { useCallback, useEffect, useState } from 'react'
 import { ALL_CARDS_URL } from '../../common/constants'
 import { toast } from 'react-toastify'
+import { CardSkeleton } from './CardSkeleton'
 
 export const CardsList = () => {
   const [cards, setCards] = useState()
@@ -43,7 +44,13 @@ export const CardsList = () => {
           </Button>
         </Container>
       ) : isLoading ? (
-        'Loading...'
+        <>
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+          <CardSkeleton />
+        </>
       ) : cards === undefined ? (
         'Cards not fetched yet'
       ) : cards.length === 0 ? (
