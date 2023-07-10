@@ -13,6 +13,6 @@ export const onDelete = async ({ id, onSuccessCallback }) => {
 
     onSuccessCallback()
   } catch (error) {
-    toast.error(error.message)
+    toast.error('Failed to delete the card')
   }
 }

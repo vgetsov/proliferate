@@ -74,7 +74,9 @@ export const CreateCard = () => {
 
       navigate('/')
     } catch (error) {
-      toast.error(error.message)
+      toast.error('Failed to create the card')
+    } finally {
+      setIsLoading(false)
     }
   }
 
