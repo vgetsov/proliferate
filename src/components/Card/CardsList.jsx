@@ -1,23 +1,26 @@
 import { Box } from '@mui/material'
 import { CustomCard } from './CustomCard'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { ALL_CARDS_URL } from '../../common/constants'
 
 export const CardsList = () => {
   const [cards, setCards] = useState()
   const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-    const fetchCards = async () => {
-      setIsLoading(true)
-      const response = await fetch(ALL_CARDS_URL)
-      const data = await response.json()
-      setCards(data)
-      setIsLoading(false)
-    }
+  const fetchCards = useCallback(async () => {
+    setIsLoading(true)
 
-    fetchCards()
+    const response = await fetch(ALL_CARDS_URL)
+
+    const data = await response.json()
+    setCards(data)
+
+    setIsLoading(false)
   }, [])
+
+  useEffect(() => {
+    fetchCards()
+  }, [fetchCards])
 
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
@@ -37,6 +40,7 @@ export const CardsList = () => {
               toughness={toughness}
               edhrec_link={related_uris.edhrec}
               price={prices.eur}
+              fetchCards={fetchCards}
             />
           ))}
     </Box>

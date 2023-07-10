@@ -248,7 +248,13 @@ export const CreateCard = () => {
                   />
                 </Grid>
               </Grid>
-              <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2, bgcolor: '#40a798' }}>
+              <Button
+                type="submit"
+                disabled={isLoading}
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2, bgcolor: '#40a798' }}
+              >
                 {isLoading ? 'Loading...' : 'Create card'}
               </Button>
             </Box>

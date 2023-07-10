@@ -6,26 +6,12 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
 
-import { ALL_CARDS_URL, DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
+import { onDelete } from '../../common/utils'
+import { DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
 
 import './CustomCard.scss'
-import { toast } from 'react-toastify'
 
-export const CustomCard = ({ id, name, image, cardType, effect, power, toughness, edhrec_link, price }) => {
-  const onDelete = async (id) => {
-    try {
-      const removeCardData = await fetch(`${ALL_CARDS_URL}/${id}`, {
-        method: 'DELETE',
-      })
-
-      console.log(removeCardData) // TODO refetch all cards IMMEDIATELY
-
-      toast.info('Card deleted successfully')
-    } catch (error) {
-      toast.error(error.message)
-    }
-  }
-
+export const CustomCard = ({ id, name, image, cardType, effect, power, toughness, edhrec_link, price, fetchCards }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" alt={name} height="480" image={image} />
@@ -36,7 +22,7 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
         <Typography variant="body2" color="text.secondary">
           {cardType}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography className="card-effect-field" variant="body2" color="text.secondary">
           {effect}
         </Typography>
         <Typography variant="body2" color="text.secondary">
@@ -45,9 +31,7 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
         </Typography>
         {cardType.includes('Creature') ? (
           <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
-            <Typography>
-              {power}/{toughness}
-            </Typography>
+            {power}/{toughness}
           </Typography>
         ) : (
           ''
@@ -62,7 +46,12 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
         <Button variant="outlined" size="small">
           {EDIT}
         </Button>
-        <Button variant="outlined" onClick={() => onDelete(id)} size="small" color="error">
+        <Button
+          variant="outlined"
+          onClick={() => onDelete({ id, onSuccessCallback: fetchCards })}
+          size="small"
+          color="error"
+        >
           {DELETE}
         </Button>
       </CardActions>
@@ -80,4 +69,5 @@ CustomCard.propTypes = {
   toughness: PropTypes.string,
   edhrec_link: PropTypes.string.isRequired,
   price: PropTypes.string,
+  fetchCards: PropTypes.func.isRequired,
 }
