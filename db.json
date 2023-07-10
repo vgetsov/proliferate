@@ -4,9 +4,7 @@
       "object": "card",
       "id": "0000579f-7b35-4ed3-b44c-db2a538066fe",
       "oracle_id": "44623693-51d6-49ad-8cd7-140505caf02f",
-      "multiverse_ids": [
-        109722
-      ],
+      "multiverse_ids": [109722],
       "mtgo_id": 25527,
       "mtgo_foil_id": 25528,
       "tcgplayer_id": 14240,
@@ -33,12 +31,8 @@
       "oracle_text": "All Sliver creatures have double strike.",
       "power": "3",
       "toughness": "3",
-      "colors": [
-        "R"
-      ],
-      "color_identity": [
-        "R"
-      ],
+      "colors": ["R"],
+      "color_identity": ["R"],
       "keywords": [],
       "legalities": {
         "standard": "not_legal",
@@ -63,17 +57,11 @@
         "premodern": "not_legal",
         "predh": "legal"
       },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
+      "games": ["paper", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -93,9 +81,7 @@
       "flavor_text": "\"A rift opened, and our arrows were abruptly stilled. To move was to push the world. But the sliver's claw still twitched, red wounds appeared in Thed's chest, and ribbons of blood hung in the air.\"\n—Adom Capashen, Benalish hero",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Paolo Parente",
-      "artist_ids": [
-        "d48dd097-720d-476a-8722-6a02854ae28b"
-      ],
+      "artist_ids": ["d48dd097-720d-476a-8722-6a02854ae28b"],
       "illustration_id": "2fcca987-364c-4738-a75b-099d8a26d614",
       "border_color": "black",
       "frame": "2003",
@@ -124,9 +110,7 @@
       "object": "card",
       "id": "00006596-1166-4a79-8443-ca9f82e6db4e",
       "oracle_id": "8ae3562f-28b7-4462-96ed-be0cf7052ccc",
-      "multiverse_ids": [
-        189637
-      ],
+      "multiverse_ids": [189637],
       "mtgo_id": 34586,
       "mtgo_foil_id": 34587,
       "tcgplayer_id": 33347,
@@ -153,12 +137,8 @@
       "oracle_text": "When Kor Outfitter enters the battlefield, you may attach target Equipment you control to target creature you control.",
       "power": "2",
       "toughness": "2",
-      "colors": [
-        "W"
-      ],
-      "color_identity": [
-        "W"
-      ],
+      "colors": ["W"],
+      "color_identity": ["W"],
       "keywords": [],
       "legalities": {
         "standard": "not_legal",
@@ -183,17 +163,11 @@
         "premodern": "not_legal",
         "predh": "legal"
       },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
+      "games": ["paper", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -213,9 +187,7 @@
       "flavor_text": "\"We take only what we need to survive. Believe me, you will need this.\"",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Kieran Yanner",
-      "artist_ids": [
-        "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
-      ],
+      "artist_ids": ["aa7e89ed-d294-4633-9057-ce04dacfcfa4"],
       "illustration_id": "de0310d1-e97f-46e0-bc16-c980c2adedee",
       "border_color": "black",
       "frame": "2003",
@@ -244,9 +216,7 @@
       "object": "card",
       "id": "0000cd57-91fe-411f-b798-646e965eec37",
       "oracle_id": "9f0d82ae-38bf-45d8-8cda-982b6ead1d72",
-      "multiverse_ids": [
-        435231
-      ],
+      "multiverse_ids": [435231],
       "mtgo_id": 65170,
       "mtgo_foil_id": 65171,
       "arena_id": 66119,
@@ -274,16 +244,9 @@
       "oracle_text": "Flying\nWhen Siren Lookout enters the battlefield, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)",
       "power": "1",
       "toughness": "2",
-      "colors": [
-        "U"
-      ],
-      "color_identity": [
-        "U"
-      ],
-      "keywords": [
-        "Flying",
-        "Explore"
-      ],
+      "colors": ["U"],
+      "color_identity": ["U"],
+      "keywords": ["Flying", "Explore"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -307,18 +270,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "arena",
-        "paper",
-        "mtgo"
-      ],
+      "games": ["arena", "paper", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -337,9 +293,7 @@
       "rarity": "common",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Chris Rallis",
-      "artist_ids": [
-        "a8e7b854-b15a-421a-b66d-6e68187ae285"
-      ],
+      "artist_ids": ["a8e7b854-b15a-421a-b66d-6e68187ae285"],
       "illustration_id": "e0a40a54-9216-4c86-b9e3-daed04abc310",
       "border_color": "black",
       "frame": "2015",
@@ -368,9 +322,7 @@
       "object": "card",
       "id": "0001f1ef-b957-4a55-b47f-14839cdbab6f",
       "oracle_id": "ef027846-be81-4959-a6b5-56bd01b1e68a",
-      "multiverse_ids": [
-        472997
-      ],
+      "multiverse_ids": [472997],
       "mtgo_id": 78170,
       "arena_id": 70182,
       "tcgplayer_id": 198861,
@@ -397,12 +349,8 @@
       "oracle_text": "When Venerable Knight dies, put a +1/+1 counter on target Knight you control.",
       "power": "2",
       "toughness": "1",
-      "colors": [
-        "W"
-      ],
-      "color_identity": [
-        "W"
-      ],
+      "colors": ["W"],
+      "color_identity": ["W"],
       "keywords": [],
       "legalities": {
         "standard": "not_legal",
@@ -427,18 +375,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "arena",
-        "paper",
-        "mtgo"
-      ],
+      "games": ["arena", "paper", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -458,9 +399,7 @@
       "flavor_text": "\"May this blade guide you on your great journey, as it did me on mine.\"",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Colin Boyer",
-      "artist_ids": [
-        "9c201dbe-db56-429a-87e6-189ea70c2632"
-      ],
+      "artist_ids": ["9c201dbe-db56-429a-87e6-189ea70c2632"],
       "illustration_id": "619c439b-8b4d-4c0c-9f86-9fdae9bd1c25",
       "border_color": "black",
       "frame": "2015",
@@ -494,9 +433,7 @@
       "object": "card",
       "id": "00020b05-ecb9-4603-8cc1-8cfa7a14befc",
       "oracle_id": "d96ac790-428b-4a64-8dbd-6baa73eb6210",
-      "multiverse_ids": [
-        394089
-      ],
+      "multiverse_ids": [394089],
       "tcgplayer_id": 95585,
       "cardmarket_id": 272052,
       "name": "Wildcall",
@@ -519,15 +456,9 @@
       "cmc": 2,
       "type_line": "Sorcery",
       "oracle_text": "Manifest the top card of your library, then put X +1/+1 counters on it. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)",
-      "colors": [
-        "G"
-      ],
-      "color_identity": [
-        "G"
-      ],
-      "keywords": [
-        "Manifest"
-      ],
+      "colors": ["G"],
+      "color_identity": ["G"],
+      "keywords": ["Manifest"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -551,15 +482,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "paper"
-      ],
+      "games": ["paper"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": true,
       "reprint": true,
@@ -579,9 +506,7 @@
       "flavor_text": "A howl on the wind hides many dangers.",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Adam Paquette",
-      "artist_ids": [
-        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
-      ],
+      "artist_ids": ["89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"],
       "illustration_id": "b90c25fd-2ee1-4372-89d1-fc806d01d501",
       "border_color": "black",
       "frame": "2015",
@@ -590,9 +515,7 @@
       "textless": false,
       "booster": true,
       "story_spotlight": false,
-      "promo_types": [
-        "setpromo"
-      ],
+      "promo_types": ["setpromo"],
       "edhrec_rank": 18475,
       "penny_rank": 11084,
       "prices": {
@@ -614,9 +537,7 @@
       "object": "card",
       "id": "0002ab72-834b-4c81-82b1-0d2760ea96b0",
       "oracle_id": "645b5784-a6f7-4cf3-966a-e1a51420b96b",
-      "multiverse_ids": [
-        488632
-      ],
+      "multiverse_ids": [488632],
       "mtgo_id": 81171,
       "arena_id": 72048,
       "tcgplayer_id": 215418,
@@ -643,12 +564,8 @@
       "oracle_text": "Whenever you draw your second card each turn, Mystic Skyfish gains flying until end of turn.",
       "power": "3",
       "toughness": "1",
-      "colors": [
-        "U"
-      ],
-      "color_identity": [
-        "U"
-      ],
+      "colors": ["U"],
+      "color_identity": ["U"],
       "keywords": [],
       "legalities": {
         "standard": "not_legal",
@@ -673,17 +590,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "arena",
-        "paper",
-        "mtgo"
-      ],
+      "games": ["arena", "paper", "mtgo"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -703,9 +614,7 @@
       "flavor_text": "The problem wasn't that fish had learned how to fly. It was that sharks had adapted to follow them.",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Alayna Danner",
-      "artist_ids": [
-        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
-      ],
+      "artist_ids": ["bb677b1a-ce51-4888-83d6-5a94de461ff9"],
       "illustration_id": "e553dd8e-e593-4504-82ed-cd7a6ad01a0a",
       "border_color": "black",
       "frame": "2015",
@@ -713,9 +622,7 @@
       "textless": false,
       "booster": false,
       "story_spotlight": false,
-      "promo_types": [
-        "planeswalkerdeck"
-      ],
+      "promo_types": ["planeswalkerdeck"],
       "edhrec_rank": 22516,
       "preview": {
         "source": "CBR.com",
@@ -741,9 +648,7 @@
       "object": "card",
       "id": "00030770-5e99-4943-819d-8d807c24cc14",
       "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
-      "multiverse_ids": [
-        489643
-      ],
+      "multiverse_ids": [489643],
       "arena_id": 72579,
       "tcgplayer_id": 215984,
       "cardmarket_id": 472559,
@@ -768,13 +673,9 @@
       "type_line": "Basic Land — Swamp",
       "oracle_text": "({T}: Add {B}.)",
       "colors": [],
-      "color_identity": [
-        "B"
-      ],
+      "color_identity": ["B"],
       "keywords": [],
-      "produced_mana": [
-        "B"
-      ],
+      "produced_mana": ["B"],
       "legalities": {
         "standard": "legal",
         "future": "legal",
@@ -798,16 +699,11 @@
         "premodern": "legal",
         "predh": "legal"
       },
-      "games": [
-        "arena",
-        "paper"
-      ],
+      "games": ["arena", "paper"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": false,
       "reprint": true,
@@ -826,9 +722,7 @@
       "rarity": "common",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Adam Paquette",
-      "artist_ids": [
-        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
-      ],
+      "artist_ids": ["89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"],
       "illustration_id": "6b07ca0f-0cde-4798-b8f0-429f2fba450d",
       "border_color": "black",
       "frame": "2015",
@@ -860,9 +754,7 @@
       "object": "card",
       "id": "000376ef-8b6c-490d-98cb-d6de15b2e585",
       "oracle_id": "49f0b317-6b06-482e-ab64-e02713e6c7e8",
-      "multiverse_ids": [
-        574523
-      ],
+      "multiverse_ids": [574523],
       "mtgo_id": 102562,
       "arena_id": 82095,
       "tcgplayer_id": 283405,
@@ -889,17 +781,9 @@
       "oracle_text": "Kicker {R} (You may pay an additional {R} as you cast this spell.)\nFlying\nWhen Battlewing Mystic enters the battlefield, if it was kicked, discard your hand, then draw two cards.",
       "power": "2",
       "toughness": "1",
-      "colors": [
-        "U"
-      ],
-      "color_identity": [
-        "R",
-        "U"
-      ],
-      "keywords": [
-        "Kicker",
-        "Flying"
-      ],
+      "colors": ["U"],
+      "color_identity": ["R", "U"],
+      "keywords": ["Kicker", "Flying"],
       "legalities": {
         "standard": "legal",
         "future": "legal",
@@ -923,18 +807,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "paper",
-        "arena",
-        "mtgo"
-      ],
+      "games": ["paper", "arena", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -953,9 +830,7 @@
       "rarity": "uncommon",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Borja Pindado",
-      "artist_ids": [
-        "1624a1a8-3492-4c0b-9abc-83dcf2653111"
-      ],
+      "artist_ids": ["1624a1a8-3492-4c0b-9abc-83dcf2653111"],
       "illustration_id": "6ca11e60-dfb4-466f-b7bf-ebef3cd7b0b0",
       "border_color": "black",
       "frame": "2015",
@@ -989,9 +864,7 @@
       "object": "card",
       "id": "00042443-4d4e-4087-b4e5-5e781e7cc5fa",
       "oracle_id": "4fcfe370-ba33-438f-bd96-2ae560f59df9",
-      "multiverse_ids": [
-        24609
-      ],
+      "multiverse_ids": [24609],
       "mtgo_id": 14297,
       "mtgo_foil_id": 14298,
       "tcgplayer_id": 7396,
@@ -1018,15 +891,9 @@
       "oracle_text": "Defender (This creature can't attack.)\n{3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.",
       "power": "2",
       "toughness": "4",
-      "colors": [
-        "B"
-      ],
-      "color_identity": [
-        "B"
-      ],
-      "keywords": [
-        "Defender"
-      ],
+      "colors": ["B"],
+      "color_identity": ["B"],
+      "keywords": ["Defender"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -1050,17 +917,11 @@
         "premodern": "legal",
         "predh": "legal"
       },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
+      "games": ["paper", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -1080,9 +941,7 @@
       "flavor_text": "What wall can never be climbed, but is always scaled?\n—Nakaya riddle",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Marc Fishman",
-      "artist_ids": [
-        "d50dd2c3-34ae-4eb1-8948-cb4b38d7e4b9"
-      ],
+      "artist_ids": ["d50dd2c3-34ae-4eb1-8948-cb4b38d7e4b9"],
       "illustration_id": "65752f0f-a831-4575-a23c-daa54ac16c68",
       "border_color": "black",
       "frame": "1997",
@@ -1110,9 +969,7 @@
       "object": "card",
       "id": "0005c844-787c-4f0c-8d25-85cec151642b",
       "oracle_id": "53d5d961-d6a3-49b1-b335-2c2b49972008",
-      "multiverse_ids": [
-        450637
-      ],
+      "multiverse_ids": [450637],
       "tcgplayer_id": 170970,
       "cardmarket_id": 361746,
       "name": "Whiptongue Hydra",
@@ -1137,15 +994,9 @@
       "oracle_text": "Reach\nWhen Whiptongue Hydra enters the battlefield, destroy all creatures with flying. Put a +1/+1 counter on Whiptongue Hydra for each creature destroyed this way.",
       "power": "4",
       "toughness": "4",
-      "colors": [
-        "G"
-      ],
-      "color_identity": [
-        "G"
-      ],
-      "keywords": [
-        "Reach"
-      ],
+      "colors": ["G"],
+      "color_identity": ["G"],
+      "keywords": ["Reach"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -1169,15 +1020,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "paper"
-      ],
+      "games": ["paper"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -1197,9 +1044,7 @@
       "flavor_text": "\"Where'd all the birds go?\"\n—Kaldrin, jungle sightseer",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Tomasz Jedruszek",
-      "artist_ids": [
-        "bba69285-2445-4a4b-a847-59397be972ea"
-      ],
+      "artist_ids": ["bba69285-2445-4a4b-a847-59397be972ea"],
       "illustration_id": "a5a61ad7-5d82-4a71-81f9-1500616ca2b6",
       "border_color": "black",
       "frame": "2015",

@@ -46,6 +46,8 @@ export const CardsList = () => {
         'Loading...'
       ) : cards === undefined ? (
         'Cards not fetched yet'
+      ) : cards.length === 0 ? (
+        'No cards added yet. You can create one using the button above.'
       ) : (
         cards.map(({ id, name, image_uris, type_line, oracle_text, power, toughness, related_uris, prices }) => (
           <CustomCard
