@@ -1,7 +1,11 @@
+import { toast } from 'react-toastify'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { Avatar, Button, TextField, Grid, Box, Typography, Container } from '@mui/material'
 import { useForm } from 'react-hook-form'
 import { ChatBubble } from '@mui/icons-material'
+
 import {
   ALL_CARDS_URL,
   CARDNAME_MAX_LENGTH,
@@ -9,11 +13,14 @@ import {
   CARDNAME_MIN_LENGTH,
   CARDNAME_MIN_LENGTH_MESSAGE,
   CARDNAME_REQUIRED,
+  CARD_CREATED,
   CARD_TYPE_MAX_LENGTH,
   CARD_TYPE_MAX_LENGTH_MESSAGE,
   CARD_TYPE_MIN_LENGTH,
   CARD_TYPE_MIN_LENGTH_MESSAGE,
   CARD_TYPE_REQUIRED,
+  CREATE_A_MTG_CARD,
+  CREATE_PAGE_TITLE,
   EDHREC_LINK_PATTERN_MESSAGE,
   EDHREC_LINK_REQUIRED,
   EFFECT_MAX_LENGTH,
@@ -21,15 +28,13 @@ import {
   EFFECT_MIN_LENGTH,
   EFFECT_MIN_LENGTH_MESSAGE,
   EFFECT_REQUIRED,
+  FAILED_TO_CREATE,
   POWER_REQUIRED,
   TOUGHNESS_REQUIRED,
   URL_PATTERN,
   URL_PATTERN_MESSAGE,
   URL_PATTERN_REQUIRED,
 } from '../../common/constants'
-import { toast } from 'react-toastify'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 export const CreateCard = () => {
   const navigate = useNavigate()
@@ -68,13 +73,13 @@ export const CreateCard = () => {
 
       console.log(createNewCardData) // TODO
 
-      toast.success('Card created successfully')
+      toast.success(CARD_CREATED)
 
       setIsLoading(false)
 
       navigate('/')
     } catch (error) {
-      toast.error('Failed to create the card')
+      toast.error(FAILED_TO_CREATE)
     } finally {
       setIsLoading(false)
     }
@@ -83,7 +88,7 @@ export const CreateCard = () => {
   return (
     <>
       <Helmet>
-        <title>Proliferate - Create a card</title>
+        <title>{CREATE_PAGE_TITLE}</title>
       </Helmet>
       <Container component="main" maxWidth="xs">
         <>
@@ -99,7 +104,7 @@ export const CreateCard = () => {
               <ChatBubble />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Create a MTG card
+              {CREATE_A_MTG_CARD}
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit(onSubmit)} sx={{ mt: 3 }}>
               <Grid container spacing={2}>

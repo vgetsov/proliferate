@@ -26,6 +26,8 @@ export const EDHREC_BTN_TEXT = 'Card analysis on EDHREC'
 export const CREATE_A_CARD = 'Create a card'
 export const EDIT = 'Edit'
 export const DELETE = 'Delete'
+export const DELETING = 'Deleting'
+export const ARE_YOU_SURE_YOU_WANT_TO_DELETE = 'Are you sure you want to delete this card?'
 
 export const PRICE_TEXT = 'Price: €'
 
@@ -63,3 +65,21 @@ export const TOUGHNESS_REQUIRED = 'Toughness is required for creatures'
 
 export const EDHREC_LINK_REQUIRED = 'EDHREC link is required'
 export const EDHREC_LINK_PATTERN_MESSAGE = 'Enter a valid EDHREC link'
+
+export const HOME_PAGE_TILE = 'Proliferate - Home'
+
+export const PROLIFERATE_LOGO_ALT = 'Proliferate logo'
+
+export const CREATE_PAGE_TITLE = 'Proliferate - Create a card'
+export const CARD_CREATED = 'Card created successfully'
+export const FAILED_TO_CREATE = 'Failed to create the card'
+export const CREATE_A_MTG_CARD = 'Create a MTG card'
+
+export const CARD_DELETED = 'Card deleted successfully'
+export const FAILED_TO_DELETE = 'Failed to delete the card'
+
+export const RETRYING = 'Retrying'
+export const RETRY = 'Retry'
+export const FAILED_TO_LOAD = 'Failed to load cards'
+export const CARDS_NOT_FETCHED = 'Cards not fetched yet'
+export const NO_CARDS_YET = 'No cards added yet. You can create one using the button above.'

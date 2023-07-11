@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+
 import { SignUp } from './components/SignUp/SignUp'
 import { Navbar } from './components/Navbar/Navbar'
 import { LogIn } from './components/LogIn/LogIn'

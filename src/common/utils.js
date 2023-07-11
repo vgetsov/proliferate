@@ -1,5 +1,5 @@
 import { toast } from 'react-toastify'
-import { ALL_CARDS_URL } from './constants'
+import { ALL_CARDS_URL, CARD_DELETED, FAILED_TO_DELETE } from './constants'
 
 export const onDelete = async ({ id, onSuccessCallback }) => {
   try {
@@ -9,10 +9,10 @@ export const onDelete = async ({ id, onSuccessCallback }) => {
 
     console.log(removeCardData)
 
-    toast.info('Card deleted successfully')
+    toast.info(CARD_DELETED)
 
     onSuccessCallback()
   } catch (error) {
-    toast.error('Failed to delete the card')
+    toast.error(FAILED_TO_DELETE)
   }
 }

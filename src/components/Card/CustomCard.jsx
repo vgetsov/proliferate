@@ -1,24 +1,31 @@
+import { useState } from 'react'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
+import { useConfirm } from 'material-ui-confirm'
 import PropTypes from 'prop-types'
 
 import { onDelete } from '../../common/utils'
-import { DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
+import {
+  ARE_YOU_SURE_YOU_WANT_TO_DELETE,
+  DELETE,
+  DELETING,
+  EDHREC_BTN_TEXT,
+  EDIT,
+  PRICE_TEXT,
+} from '../../common/constants'
 
 import './CustomCard.scss'
-import { useConfirm } from 'material-ui-confirm'
-import { useState } from 'react'
 
 export const CustomCard = ({ id, name, image, cardType, effect, power, toughness, edhrec_link, price, fetchCards }) => {
   const [isLoading, setIsLoading] = useState()
   const confirm = useConfirm()
 
   const onDeleteButtonClick = () => {
-    confirm({ title: `Delete ${name}`, description: 'Are you sure you want to delete this card?' })
+    confirm({ title: `${DELETE} ${name}`, description: ARE_YOU_SURE_YOU_WANT_TO_DELETE })
       .then(async () => {
         setIsLoading(true)
 
@@ -64,7 +71,7 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
           {EDIT}
         </Button>
         <Button variant="outlined" disabled={isLoading} onClick={onDeleteButtonClick} size="small" color="error">
-          {isLoading ? 'Deleting...' : DELETE}
+          {isLoading ? DELETING : DELETE}
         </Button>
       </CardActions>
     </Card>

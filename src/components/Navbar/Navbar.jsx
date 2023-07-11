@@ -1,6 +1,7 @@
 import { AppBar, Box, Toolbar, Typography, Container, Button } from '@mui/material'
 import { NavLink } from 'react-router-dom'
-import { LOGO_URL, LOG_IN, LOG_OUT, MY_CARDS, MY_PROFILE, SIGN_UP } from '../../common/constants'
+
+import { LOGO_URL, LOG_IN, LOG_OUT, MY_CARDS, MY_PROFILE, PROLIFERATE_LOGO_ALT, SIGN_UP } from '../../common/constants'
 
 import './Navbar.scss'
 
@@ -12,7 +13,7 @@ export const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { md: 'flex' } }}>
             <Typography component="ul" className="list" sx={{ my: 2, color: 'white', display: 'block', padding: 0 }}>
               <Button component={NavLink} to="/" className="nav-link" sx={{ color: 'inherit', textDecoration: 'none' }}>
-                <img className="logo" src={LOGO_URL} alt="Proliferate logo" />
+                <img className="logo" src={LOGO_URL} alt={PROLIFERATE_LOGO_ALT} />
               </Button>
               <Button
                 component={NavLink}
@@ -48,7 +49,7 @@ export const Navbar = () => {
               </Button>
               <Button
                 component={NavLink}
-                // onClick={Logout} // to be implemented with Auth0
+                // onClick={Logout} // to be implemented with Auth0?
                 className="nav-link"
                 to="/log-out"
                 sx={{ color: 'inherit', textDecoration: 'none' }}

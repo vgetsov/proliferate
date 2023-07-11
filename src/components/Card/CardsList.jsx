@@ -1,9 +1,11 @@
-import { Box, Button, Container, Typography } from '@mui/material'
-import { CustomCard } from './CustomCard'
 import { useCallback, useEffect, useState } from 'react'
-import { ALL_CARDS_URL } from '../../common/constants'
+import { Box, Button, Container, Typography } from '@mui/material'
 import { toast } from 'react-toastify'
 import { CardSkeleton } from './CardSkeleton'
+
+import { CustomCard } from './CustomCard'
+
+import { ALL_CARDS_URL, CARDS_NOT_FETCHED, FAILED_TO_LOAD, NO_CARDS_YET, RETRY, RETRYING } from '../../common/constants'
 
 export const CardsList = () => {
   const [cards, setCards] = useState()
@@ -24,7 +26,7 @@ export const CardsList = () => {
     } catch (error) {
       setIsError(true)
 
-      toast.error('Failed to load cards')
+      toast.error(FAILED_TO_LOAD)
     } finally {
       setIsLoading(false)
     }
@@ -40,7 +42,7 @@ export const CardsList = () => {
         <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
           <Typography color="text.primary">Failed to load cards</Typography>
           <Button variant="outlined" disabled={isLoading} onClick={fetchCards}>
-            {isLoading ? 'Retrying' : 'Retry'}
+            {isLoading ? RETRYING : RETRY}
           </Button>
         </Container>
       ) : isLoading ? (
@@ -52,9 +54,9 @@ export const CardsList = () => {
           <CardSkeleton />
         </>
       ) : cards === undefined ? (
-        'Cards not fetched yet'
+        CARDS_NOT_FETCHED
       ) : cards.length === 0 ? (
-        'No cards added yet. You can create one using the button above.'
+        NO_CARDS_YET
       ) : (
         cards.map(({ id, name, image_uris, type_line, oracle_text, power, toughness, related_uris, prices }) => (
           <CustomCard
