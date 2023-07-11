@@ -9,16 +9,13 @@ import { useConfirm } from 'material-ui-confirm'
 import PropTypes from 'prop-types'
 
 import { onDelete } from '../../common/utils'
-import {
-  ARE_YOU_SURE_YOU_WANT_TO_DELETE,
-  DELETE,
-  DELETING,
-  EDHREC_BTN_TEXT,
-  EDIT,
-  PRICE_TEXT,
-} from '../../common/constants'
+import { ARE_YOU_SURE_YOU_WANT_TO_DELETE, DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
+
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
+import EditIcon from '@mui/icons-material/Edit'
 
 import './CustomCard.scss'
+import { LoadingButton } from '@mui/lab'
 
 export const CustomCard = ({ id, name, image, cardType, effect, power, toughness, edhrec_link, price, fetchCards }) => {
   const [isLoading, setIsLoading] = useState()
@@ -67,12 +64,20 @@ export const CustomCard = ({ id, name, image, cardType, effect, power, toughness
         </Button>
       </CardActions>
       <CardActions className="card-action-btns-wrapper">
-        <Button variant="outlined" size="small">
+        <Button variant="outlined" size="small" startIcon={<EditIcon />}>
           {EDIT}
         </Button>
-        <Button variant="outlined" disabled={isLoading} onClick={onDeleteButtonClick} size="small" color="error">
-          {isLoading ? DELETING : DELETE}
-        </Button>
+        <LoadingButton
+          variant="outlined"
+          size="small"
+          color="error"
+          loading={isLoading}
+          loadingPosition="start"
+          startIcon={<DeleteOutlineIcon />}
+          onClick={onDeleteButtonClick}
+        >
+          {DELETE}
+        </LoadingButton>
       </CardActions>
     </Card>
   )

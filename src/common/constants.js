@@ -24,9 +24,10 @@ export const WELCOMING_MESSAGE =
 
 export const EDHREC_BTN_TEXT = 'Card analysis on EDHREC'
 export const CREATE_A_CARD = 'Create a card'
+export const CREATING = 'Creating...'
 export const EDIT = 'Edit'
 export const DELETE = 'Delete'
-export const DELETING = 'Deleting'
+export const DELETING = 'Deleting...'
 export const ARE_YOU_SURE_YOU_WANT_TO_DELETE = 'Are you sure you want to delete this card?'
 
 export const PRICE_TEXT = 'Price: €'
@@ -83,3 +84,5 @@ export const RETRY = 'Retry'
 export const FAILED_TO_LOAD = 'Failed to load cards'
 export const CARDS_NOT_FETCHED = 'Cards not fetched yet'
 export const NO_CARDS_YET = 'No cards added yet. You can create one using the button above.'
+
+export const CREATE = 'Create'

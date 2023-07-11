@@ -2,9 +2,12 @@ import { toast } from 'react-toastify'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Avatar, Button, TextField, Grid, Box, Typography, Container } from '@mui/material'
+import { Avatar, TextField, Grid, Box, Typography, Container } from '@mui/material'
+import { LoadingButton } from '@mui/lab'
 import { useForm } from 'react-hook-form'
 import { ChatBubble } from '@mui/icons-material'
+
+import SaveIcon from '@mui/icons-material/Save'
 
 import {
   ALL_CARDS_URL,
@@ -19,6 +22,7 @@ import {
   CARD_TYPE_MIN_LENGTH,
   CARD_TYPE_MIN_LENGTH_MESSAGE,
   CARD_TYPE_REQUIRED,
+  CREATE_A_CARD,
   CREATE_A_MTG_CARD,
   CREATE_PAGE_TITLE,
   EDHREC_LINK_PATTERN_MESSAGE,
@@ -255,15 +259,18 @@ export const CreateCard = () => {
                   />
                 </Grid>
               </Grid>
-              <Button
+              <LoadingButton
                 type="submit"
-                disabled={isLoading}
+                color="primary"
+                loading={isLoading}
+                loadingPosition="start"
+                startIcon={<SaveIcon />}
+                variant="outlined"
                 fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2, bgcolor: '#40a798' }}
+                sx={{ mt: 3, mb: 2 }}
               >
-                {isLoading ? 'Creating...' : 'Create card'}
-              </Button>
+                {CREATE_A_CARD}
+              </LoadingButton>
             </Box>
           </Box>
         </>

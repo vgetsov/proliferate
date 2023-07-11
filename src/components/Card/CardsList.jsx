@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Box, Button, Container, Typography } from '@mui/material'
 import { toast } from 'react-toastify'
-import { CardSkeleton } from './CardSkeleton'
 
+import { CardSkeleton } from './CardSkeleton'
 import { CustomCard } from './CustomCard'
 
 import { ALL_CARDS_URL, CARDS_NOT_FETCHED, FAILED_TO_LOAD, NO_CARDS_YET, RETRY, RETRYING } from '../../common/constants'
