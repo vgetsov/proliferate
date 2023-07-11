@@ -1223,6 +1223,23 @@
         "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Whiptongue+Hydra&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Whiptongue+Hydra"
       }
+    },
+    {
+      "name": "Rolling Thunder",
+      "image_uris": {
+        "border_crop": "https://cards.scryfall.io/border_crop/front/5/d/5dd980d5-c6d1-4834-977b-22e80f0b449d.jpg?1562917073"
+      },
+      "type_line": "Sorcery",
+      "oracle_text": "Rolling Thunder deals X damage divided as you choose among any number of targets.",
+      "power": "0",
+      "toughness": "1",
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Rolling+Thunder"
+      },
+      "prices": {
+        "eur": "0.03"
+      },
+      "id": "LDPZo28"
     }
   ]
 }

@@ -2,9 +2,9 @@ import { toast } from 'react-toastify'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { Avatar, TextField, Grid, Box, Typography, Container } from '@mui/material'
+import { Avatar, TextField, Grid, Box, Typography, Container, Autocomplete } from '@mui/material'
 import { LoadingButton } from '@mui/lab'
-import { useForm } from 'react-hook-form'
+import { Controller, useForm } from 'react-hook-form'
 import { ChatBubble } from '@mui/icons-material'
 
 import SaveIcon from '@mui/icons-material/Save'
@@ -17,10 +17,7 @@ import {
   CARDNAME_MIN_LENGTH_MESSAGE,
   CARDNAME_REQUIRED,
   CARD_CREATED,
-  CARD_TYPE_MAX_LENGTH,
-  CARD_TYPE_MAX_LENGTH_MESSAGE,
-  CARD_TYPE_MIN_LENGTH,
-  CARD_TYPE_MIN_LENGTH_MESSAGE,
+  CARD_TYPES,
   CARD_TYPE_REQUIRED,
   CREATE_A_CARD,
   CREATE_A_MTG_CARD,
@@ -53,9 +50,19 @@ export const CreateCard = () => {
 
   const {
     register,
+    watch,
     handleSubmit,
+    control,
     formState: { errors },
-  } = useForm()
+  } = useForm({
+    defaultValues: {
+      cardType: null,
+    },
+  })
+
+  const watchCardType = watch('cardType', null)
+
+  console.log(watchCardType)
 
   const onSubmit = async ({ name, imageURL, cardType, effect, power, toughness, edhrec_link, price }) => {
     try {
@@ -161,25 +168,32 @@ export const CreateCard = () => {
                   />
                 </Grid>
                 <Grid item xs={12}>
-                  <TextField
-                    {...register('cardType', {
-                      required: CARD_TYPE_REQUIRED,
-                      minLength: {
-                        value: CARD_TYPE_MIN_LENGTH,
-                        message: CARD_TYPE_MIN_LENGTH_MESSAGE,
-                      },
-                      maxLength: {
-                        value: CARD_TYPE_MAX_LENGTH,
-                        message: CARD_TYPE_MAX_LENGTH_MESSAGE,
-                      },
-                    })}
+                  <Controller
+                    render={({ field: { onChange, ...props } }) => (
+                      <Autocomplete
+                        required
+                        fullWidth
+                        disablePortal
+                        options={CARD_TYPES}
+                        onChange={(_, data) => onChange(data)}
+                        {...props}
+                        renderInput={(params) => (
+                          <TextField
+                            {...params}
+                            label="Card type"
+                            error={Boolean(errors.cardType)}
+                            helperText={errors.cardType?.message}
+                            id="cardType"
+                            name="cardType"
+                          />
+                        )}
+                      />
+                    )}
                     name="cardType"
-                    required
-                    fullWidth
-                    id="cardType"
-                    label="Card type"
-                    error={Boolean(errors.cardType)}
-                    helperText={errors.cardType?.message}
+                    control={control}
+                    rules={{
+                      required: CARD_TYPE_REQUIRED,
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -204,63 +218,69 @@ export const CreateCard = () => {
                     helperText={errors.effect?.message}
                   />
                 </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    {...register('power', {
-                      required: POWER_REQUIRED,
-                      min: {
-                        value: POWER_MIN_VALUE,
-                        message: POWER_MIN_VALUE_MESSAGE,
-                      },
-                    })}
-                    fullWidth
-                    required
-                    id="power"
-                    label="Power"
-                    name="power"
-                    type="number"
-                    error={Boolean(errors.power)}
-                    helperText={errors.power?.message}
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    {...register('toughness', {
-                      required: TOUGHNESS_REQUIRED,
-                      min: {
-                        value: TOUGHNESS_MIN_VALUE,
-                        message: TOUGHNESS_MIN_VALUE_MESSAGE,
-                      },
-                    })}
-                    fullWidth
-                    required
-                    name="toughness"
-                    id="toughness"
-                    label="Toughness"
-                    type="number"
-                    error={Boolean(errors.toughness)}
-                    helperText={errors.toughness?.message}
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    {...register('loyalty', {
-                      required: LOYALTY_REQUIRED,
-                      min: {
-                        value: LOYALTY_MIN_VALUE,
-                        message: LOYALTY_MIN_VALUE_MESSAGE,
-                      },
-                    })}
-                    fullWidth
-                    required
-                    name="loyalty"
-                    id="loyalty"
-                    label="Loyalty"
-                    type="number"
-                    error={Boolean(errors.loyalty)}
-                    helperText={errors.loyalty?.message}
-                  />
-                </Grid>
+                {watchCardType?.includes('Creature') && (
+                  <>
+                    <Grid item xs={12}>
+                      <TextField
+                        {...register('power', {
+                          required: POWER_REQUIRED,
+                          min: {
+                            value: POWER_MIN_VALUE,
+                            message: POWER_MIN_VALUE_MESSAGE,
+                          },
+                        })}
+                        fullWidth
+                        required
+                        id="power"
+                        label="Power"
+                        name="power"
+                        type="number"
+                        error={Boolean(errors.power)}
+                        helperText={errors.power?.message}
+                      />
+                    </Grid>
+                    <Grid item xs={12}>
+                      <TextField
+                        {...register('toughness', {
+                          required: TOUGHNESS_REQUIRED,
+                          min: {
+                            value: TOUGHNESS_MIN_VALUE,
+                            message: TOUGHNESS_MIN_VALUE_MESSAGE,
+                          },
+                        })}
+                        fullWidth
+                        required
+                        name="toughness"
+                        id="toughness"
+                        label="Toughness"
+                        type="number"
+                        error={Boolean(errors.toughness)}
+                        helperText={errors.toughness?.message}
+                      />
+                    </Grid>
+                  </>
+                )}
+                {watchCardType === 'Planeswalker' && (
+                  <Grid item xs={12}>
+                    <TextField
+                      {...register('loyalty', {
+                        required: LOYALTY_REQUIRED,
+                        min: {
+                          value: LOYALTY_MIN_VALUE,
+                          message: LOYALTY_MIN_VALUE_MESSAGE,
+                        },
+                      })}
+                      fullWidth
+                      required
+                      name="loyalty"
+                      id="loyalty"
+                      label="Loyalty"
+                      type="number"
+                      error={Boolean(errors.loyalty)}
+                      helperText={errors.loyalty?.message}
+                    />
+                  </Grid>
+                )}
                 <Grid item xs={12}>
                   <TextField
                     {...register('edhrec_link', {

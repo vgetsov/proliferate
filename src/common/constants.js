@@ -23,6 +23,7 @@ export const WELCOMING_MESSAGE =
   'Welcome to Proliferate - a simple SPA project for rendering Magic: The Gathering cards and performing CRUD operations'
 
 export const EDHREC_BTN_TEXT = 'Card analysis on EDHREC'
+export const CREATE = 'Create'
 export const CREATE_A_CARD = 'Create a card'
 export const CREATING = 'Creating...'
 export const EDIT = 'Edit'
@@ -46,11 +47,11 @@ export const URL_PATTERN_MESSAGE = 'Invalid URL provided'
 
 export const CARD_TYPE_REQUIRED = 'Card type is required'
 
-export const CARD_TYPE_MIN_LENGTH = 6
-export const CARD_TYPE_MIN_LENGTH_MESSAGE = `Must be at least ${CARD_TYPE_MIN_LENGTH} symbols`
+// export const CARD_TYPE_MIN_LENGTH = 6
+// export const CARD_TYPE_MIN_LENGTH_MESSAGE = `Must be at least ${CARD_TYPE_MIN_LENGTH} symbols`
 
-export const CARD_TYPE_MAX_LENGTH = 100
-export const CARD_TYPE_MAX_LENGTH_MESSAGE = `Must be at most ${CARD_TYPE_MAX_LENGTH} symbols`
+// export const CARD_TYPE_MAX_LENGTH = 100
+// export const CARD_TYPE_MAX_LENGTH_MESSAGE = `Must be at most ${CARD_TYPE_MAX_LENGTH} symbols`
 
 export const EFFECT_REQUIRED = 'Effect is required'
 
@@ -94,4 +95,14 @@ export const FAILED_TO_LOAD = 'Failed to load cards'
 export const CARDS_NOT_FETCHED = 'Cards not fetched yet'
 export const NO_CARDS_YET = 'No cards added yet. You can create one using the button above.'
 
-export const CREATE = 'Create'
+export const CARD_TYPES = [
+  'Creature',
+  'Legendary Creature',
+  'Planeswalker',
+  'Artifact',
+  'Enchantment',
+  'Battle',
+  'Instant',
+  'Sorcery',
+  'Land',
+]
