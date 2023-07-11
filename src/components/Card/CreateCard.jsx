@@ -33,7 +33,14 @@ import {
   EFFECT_MIN_LENGTH_MESSAGE,
   EFFECT_REQUIRED,
   FAILED_TO_CREATE,
+  LOYALTY_MIN_VALUE,
+  LOYALTY_MIN_VALUE_MESSAGE,
+  LOYALTY_REQUIRED,
+  POWER_MIN_VALUE,
+  POWER_MIN_VALUE_MESSAGE,
   POWER_REQUIRED,
+  TOUGHNESS_MIN_VALUE,
+  TOUGHNESS_MIN_VALUE_MESSAGE,
   TOUGHNESS_REQUIRED,
   URL_PATTERN,
   URL_PATTERN_MESSAGE,
@@ -201,8 +208,13 @@ export const CreateCard = () => {
                   <TextField
                     {...register('power', {
                       required: POWER_REQUIRED,
+                      min: {
+                        value: POWER_MIN_VALUE,
+                        message: POWER_MIN_VALUE_MESSAGE,
+                      },
                     })}
                     fullWidth
+                    required
                     id="power"
                     label="Power"
                     name="power"
@@ -215,14 +227,38 @@ export const CreateCard = () => {
                   <TextField
                     {...register('toughness', {
                       required: TOUGHNESS_REQUIRED,
+                      min: {
+                        value: TOUGHNESS_MIN_VALUE,
+                        message: TOUGHNESS_MIN_VALUE_MESSAGE,
+                      },
                     })}
                     fullWidth
+                    required
                     name="toughness"
                     id="toughness"
                     label="Toughness"
                     type="number"
                     error={Boolean(errors.toughness)}
                     helperText={errors.toughness?.message}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    {...register('loyalty', {
+                      required: LOYALTY_REQUIRED,
+                      min: {
+                        value: LOYALTY_MIN_VALUE,
+                        message: LOYALTY_MIN_VALUE_MESSAGE,
+                      },
+                    })}
+                    fullWidth
+                    required
+                    name="loyalty"
+                    id="loyalty"
+                    label="Loyalty"
+                    type="number"
+                    error={Boolean(errors.loyalty)}
+                    helperText={errors.loyalty?.message}
                   />
                 </Grid>
                 <Grid item xs={12}>

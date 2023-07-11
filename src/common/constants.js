@@ -60,9 +60,18 @@ export const EFFECT_MIN_LENGTH_MESSAGE = `Must be at least ${EFFECT_MIN_LENGTH} 
 export const EFFECT_MAX_LENGTH = 2000
 export const EFFECT_MAX_LENGTH_MESSAGE = `Must be at most ${EFFECT_MAX_LENGTH} symbols`
 
-export const POWER_REQUIRED = 'Power is required only for creatures'
+export const POWER_MIN_VALUE = 0
+export const POWER_MIN_VALUE_MESSAGE = `Must be at least ${POWER_MIN_VALUE}`
 
-export const TOUGHNESS_REQUIRED = 'Toughness is required for creatures'
+export const TOUGHNESS_MIN_VALUE = 1
+export const TOUGHNESS_MIN_VALUE_MESSAGE = `Must be at least ${TOUGHNESS_MIN_VALUE}`
+
+export const LOYALTY_MIN_VALUE = 1
+export const LOYALTY_MIN_VALUE_MESSAGE = `Must be at least ${LOYALTY_MIN_VALUE}`
+
+export const POWER_REQUIRED = 'Power is required'
+export const TOUGHNESS_REQUIRED = 'Toughness is required'
+export const LOYALTY_REQUIRED = 'Loyalty is required'
 
 export const EDHREC_LINK_REQUIRED = 'EDHREC link is required'
 export const EDHREC_LINK_PATTERN_MESSAGE = 'Enter a valid EDHREC link'
