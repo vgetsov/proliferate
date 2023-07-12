@@ -62,8 +62,6 @@ export const CreateCard = () => {
 
   const watchCardType = watch('cardType', null)
 
-  console.log(watchCardType)
-
   const onSubmit = async ({ name, imageURL, cardType, effect, power, toughness, edhrec_link, price }) => {
     try {
       setIsLoading(true)

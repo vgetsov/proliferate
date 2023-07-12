@@ -10,26 +10,14 @@ import { EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
 
 import EditIcon from '@mui/icons-material/Edit'
 
-export const SingleCard = ({
-  name,
-  image,
-  cardType,
-  effect,
-  power,
-  toughness,
-  loyalty,
-  edhrec_link,
-  price,
-  //   fetchSingleCard, // TODO for editing cards functionality
-}) => {
-  //   const [isLoading, setIsLoading] = useState() // TODO for Editing cards functionality
-  //   const confirm = useConfirm()
+export const SingleCard = ({ card, setIsModalOpen }) => {
+  const { name, image_uris, type_line, oracle_text, power, toughness, loyalty, related_uris, prices } = card
 
   return (
     <>
       <Card sx={{ maxWidth: 345 }}>
         <CardContent className="card-content-wrapper">
-          <CardMedia component="img" alt={name} image={image} />
+          <CardMedia component="img" alt={name} image={image_uris?.border_crop} />
         </CardContent>
       </Card>
       <Card sx={{ maxWidth: 345 }}>
@@ -38,23 +26,23 @@ export const SingleCard = ({
             {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {cardType}
+            {type_line}
           </Typography>
           <Typography className="card-effect-field" variant="body2" color="text.secondary">
-            {effect}
+            {oracle_text}
           </Typography>
           <Typography variant="body2" color="text.secondary">
             {PRICE_TEXT}
-            {price}
+            {prices?.eur}
           </Typography>
-          {cardType?.includes('Creature') ? (
+          {type_line?.includes('Creature') ? (
             <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
               {power}/{toughness}
             </Typography>
           ) : (
             ''
           )}
-          {cardType === 'Planeswalker' ? (
+          {type_line === 'Planeswalker' ? (
             <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
               {loyalty}
             </Typography>
@@ -63,12 +51,19 @@ export const SingleCard = ({
           )}
         </CardContent>
         <CardActions className="card-action-btns-wrapper">
-          <Button variant="outlined" size="small" startIcon={<EditIcon />}>
+          <Button onClick={() => setIsModalOpen(true)} variant="outlined" size="small" startIcon={<EditIcon />}>
             {EDIT}
           </Button>
         </CardActions>
         <CardActions className="edhrec-action-btn-wrapper">
-          <Button component="a" href={edhrec_link} target="_blank" variant="outlined" size="small" color="secondary">
+          <Button
+            component="a"
+            href={related_uris?.edhrec}
+            target="_blank"
+            variant="outlined"
+            size="small"
+            color="secondary"
+          >
             {EDHREC_BTN_TEXT}
           </Button>
         </CardActions>
@@ -78,15 +73,6 @@ export const SingleCard = ({
 }
 
 SingleCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  cardType: PropTypes.string.isRequired,
-  effect: PropTypes.string.isRequired,
-  power: PropTypes.string,
-  toughness: PropTypes.string,
-  loyalty: PropTypes.string,
-  edhrec_link: PropTypes.string.isRequired,
-  price: PropTypes.string,
-  //   fetchSingleCard: PropTypes.func.isRequired,
+  card: PropTypes.object.isRequired,
+  setIsModalOpen: PropTypes.func.isRequired,
 }

@@ -1240,6 +1240,21 @@
         "eur": "0.03"
       },
       "id": "LDPZo28"
+    },
+    {
+      "name": "Tolarian Academy",
+      "image_uris": {
+        "border_crop": "https://cards.scryfall.io/border_crop/front/b/0/b0247ee3-7799-43c2-9617-35b3edc91f22.jpg?1630551938"
+      },
+      "type_line": "Enchantment",
+      "oracle_text": "{T}: Add {U} for each artifact you control.",
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Tolarian+Academy"
+      },
+      "prices": {
+        "eur": "55"
+      },
+      "id": "owbqcJd"
     }
   ]
 }
