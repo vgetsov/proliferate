@@ -92,8 +92,13 @@ export const FAILED_TO_DELETE = 'Failed to delete the card'
 export const RETRYING = 'Retrying'
 export const RETRY = 'Retry'
 export const FAILED_TO_LOAD = 'Failed to load cards'
+
 export const CARDS_NOT_FETCHED = 'Cards not fetched yet'
+export const CARD_NOT_FETCHED = 'Card not fetched yet'
 export const NO_CARDS_YET = 'No cards added yet. You can create one using the button above.'
+export const CARD_NOT_FOUND = 'Card not found'
+export const FAILED_TO_LOAD_CARDS = 'Failed to load cards'
+export const FAILED_TO_LOAD_CARD = 'Failed to load the card'
 
 export const CARD_TYPES = [
   'Creature',

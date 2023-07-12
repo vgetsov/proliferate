@@ -5,7 +5,15 @@ import { toast } from 'react-toastify'
 import { CardSkeleton } from './CardSkeleton'
 import { CustomCard } from './CustomCard'
 
-import { ALL_CARDS_URL, CARDS_NOT_FETCHED, FAILED_TO_LOAD, NO_CARDS_YET, RETRY, RETRYING } from '../../common/constants'
+import {
+  ALL_CARDS_URL,
+  CARDS_NOT_FETCHED,
+  FAILED_TO_LOAD,
+  FAILED_TO_LOAD_CARDS,
+  NO_CARDS_YET,
+  RETRY,
+  RETRYING,
+} from '../../common/constants'
 
 export const CardsList = () => {
   const [cards, setCards] = useState()
@@ -40,7 +48,7 @@ export const CardsList = () => {
     <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
       {isError ? (
         <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-          <Typography color="text.primary">Failed to load cards</Typography>
+          <Typography color="text.primary">{FAILED_TO_LOAD_CARDS}</Typography>
           <Button variant="outlined" disabled={isLoading} onClick={fetchCards}>
             {isLoading ? RETRYING : RETRY}
           </Button>
