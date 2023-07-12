@@ -10,7 +10,6 @@ import { EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
 
 import EditIcon from '@mui/icons-material/Edit'
 
-// import './CustomCard.scss'
 export const SingleCard = ({
   name,
   image,
@@ -27,48 +26,54 @@ export const SingleCard = ({
   //   const confirm = useConfirm()
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia component="img" alt={name} image={image} />
-      <CardContent className="card-content-wrapper">
-        <Typography gutterBottom variant="h5" component="div">
-          {name}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {cardType}
-        </Typography>
-        <Typography className="card-effect-field" variant="body2" color="text.secondary">
-          {effect}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {PRICE_TEXT}
-          {price}
-        </Typography>
-        {cardType?.includes('Creature') ? (
-          <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
-            {power}/{toughness}
+    <>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent className="card-content-wrapper">
+          <CardMedia component="img" alt={name} image={image} />
+        </CardContent>
+      </Card>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardContent className="card-content-wrapper">
+          <Typography gutterBottom variant="h5" component="div">
+            {name}
           </Typography>
-        ) : (
-          ''
-        )}
-        {cardType === 'Planeswalker' ? (
-          <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
-            {loyalty}
+          <Typography variant="body2" color="text.secondary">
+            {cardType}
           </Typography>
-        ) : (
-          ''
-        )}
-      </CardContent>
-      <CardActions className="edhrec-action-btn-wrapper">
-        <Button component="a" href={edhrec_link} target="_blank" variant="outlined" size="small" color="secondary">
-          {EDHREC_BTN_TEXT}
-        </Button>
-      </CardActions>
-      <CardActions className="card-action-btns-wrapper">
-        <Button variant="outlined" size="small" startIcon={<EditIcon />}>
-          {EDIT}
-        </Button>
-      </CardActions>
-    </Card>
+          <Typography className="card-effect-field" variant="body2" color="text.secondary">
+            {effect}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {PRICE_TEXT}
+            {price}
+          </Typography>
+          {cardType?.includes('Creature') ? (
+            <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
+              {power}/{toughness}
+            </Typography>
+          ) : (
+            ''
+          )}
+          {cardType === 'Planeswalker' ? (
+            <Typography variant="body2" color="text.secondary" sx={{ display: 'flex' }}>
+              {loyalty}
+            </Typography>
+          ) : (
+            ''
+          )}
+        </CardContent>
+        <CardActions className="card-action-btns-wrapper">
+          <Button variant="outlined" size="small" startIcon={<EditIcon />}>
+            {EDIT}
+          </Button>
+        </CardActions>
+        <CardActions className="edhrec-action-btn-wrapper">
+          <Button component="a" href={edhrec_link} target="_blank" variant="outlined" size="small" color="secondary">
+            {EDHREC_BTN_TEXT}
+          </Button>
+        </CardActions>
+      </Card>
+    </>
   )
 }
 

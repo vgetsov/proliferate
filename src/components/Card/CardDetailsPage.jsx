@@ -48,7 +48,7 @@ export const CardDetailsPage = () => {
   }, [fetchSingleCard])
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
       {isError ? (
         <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
           <Typography color="text.primary">{FAILED_TO_LOAD_CARD}</Typography>
@@ -58,6 +58,7 @@ export const CardDetailsPage = () => {
         </Container>
       ) : isLoading ? (
         <>
+          <CardSkeleton />
           <CardSkeleton />
         </>
       ) : card === undefined ? (

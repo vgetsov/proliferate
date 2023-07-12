@@ -9,10 +9,9 @@ import { useConfirm } from 'material-ui-confirm'
 import PropTypes from 'prop-types'
 
 import { onDelete } from '../../common/utils'
-import { ARE_YOU_SURE_YOU_WANT_TO_DELETE, DELETE, EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
+import { ARE_YOU_SURE_YOU_WANT_TO_DELETE, DELETE, EDHREC_BTN_TEXT, PRICE_TEXT } from '../../common/constants'
 
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
-import EditIcon from '@mui/icons-material/Edit'
 
 import './CustomCard.scss'
 import { LoadingButton } from '@mui/lab'
@@ -86,9 +85,6 @@ export const CustomCard = ({
         </Button>
       </CardActions>
       <CardActions className="card-action-btns-wrapper">
-        <Button variant="outlined" size="small" startIcon={<EditIcon />}>
-          {EDIT}
-        </Button>
         <LoadingButton
           variant="outlined"
           size="small"

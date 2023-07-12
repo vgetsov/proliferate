@@ -140,7 +140,6 @@ export const CreateCard = () => {
                       },
                     })}
                     name="name"
-                    required
                     fullWidth
                     id="name"
                     label="Name"
@@ -158,7 +157,6 @@ export const CreateCard = () => {
                         message: URL_PATTERN_MESSAGE,
                       },
                     })}
-                    required
                     fullWidth
                     name="imageURL"
                     label="Image URL"
@@ -171,7 +169,6 @@ export const CreateCard = () => {
                   <Controller
                     render={({ field: { onChange, ...props } }) => (
                       <Autocomplete
-                        required
                         fullWidth
                         disablePortal
                         options={CARD_TYPES}
@@ -209,7 +206,6 @@ export const CreateCard = () => {
                         message: EFFECT_MAX_LENGTH_MESSAGE,
                       },
                     })}
-                    required
                     fullWidth
                     id="effect"
                     label="Effect"
@@ -230,7 +226,6 @@ export const CreateCard = () => {
                           },
                         })}
                         fullWidth
-                        required
                         id="power"
                         label="Power"
                         name="power"
@@ -249,7 +244,6 @@ export const CreateCard = () => {
                           },
                         })}
                         fullWidth
-                        required
                         name="toughness"
                         id="toughness"
                         label="Toughness"
@@ -271,7 +265,6 @@ export const CreateCard = () => {
                         },
                       })}
                       fullWidth
-                      required
                       name="loyalty"
                       id="loyalty"
                       label="Loyalty"
@@ -290,7 +283,6 @@ export const CreateCard = () => {
                         message: EDHREC_LINK_PATTERN_MESSAGE,
                       },
                     })}
-                    required
                     fullWidth
                     name="edhrec_link"
                     id="edhrec_link"
@@ -304,7 +296,6 @@ export const CreateCard = () => {
                     {...register('price', {
                       required: 'Price is required',
                     })}
-                    required
                     fullWidth
                     name="price"
                     id="price"
