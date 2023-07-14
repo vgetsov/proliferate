@@ -1,244 +1,38 @@
 {
   "cards": [
     {
-      "object": "card",
-      "id": "0000579f-7b35-4ed3-b44c-db2a538066fe",
-      "oracle_id": "44623693-51d6-49ad-8cd7-140505caf02f",
-      "multiverse_ids": [
-        109722
-      ],
-      "mtgo_id": 25527,
-      "mtgo_foil_id": 25528,
-      "tcgplayer_id": 14240,
-      "cardmarket_id": 13850,
       "name": "Fury Sliver",
-      "lang": "en",
-      "released_at": "2006-10-06",
-      "uri": "https://api.scryfall.com/cards/0000579f-7b35-4ed3-b44c-db2a538066fe",
-      "scryfall_uri": "https://scryfall.com/card/tsp/157/fury-sliver?utm_source=api",
-      "layout": "normal",
-      "highres_image": true,
-      "image_status": "highres_scan",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
-        "normal": "https://cards.scryfall.io/normal/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
-        "large": "https://cards.scryfall.io/large/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
-        "png": "https://cards.scryfall.io/png/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.png?1562894979",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979",
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0000579f-7b35-4ed3-b44c-db2a538066fe.jpg?1562894979"
       },
-      "mana_cost": "{5}{R}",
-      "cmc": 6,
-      "type_line": "Creature — Sliver",
+      "type_line": "Creature",
       "oracle_text": "All Sliver creatures have double strike.",
       "power": "3",
       "toughness": "3",
-      "colors": [
-        "R"
-      ],
-      "color_identity": [
-        "R"
-      ],
-      "keywords": [],
-      "legalities": {
-        "standard": "not_legal",
-        "future": "not_legal",
-        "historic": "not_legal",
-        "gladiator": "not_legal",
-        "pioneer": "not_legal",
-        "explorer": "not_legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "not_legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "brawl": "not_legal",
-        "historicbrawl": "not_legal",
-        "alchemy": "not_legal",
-        "paupercommander": "restricted",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "legal"
-      },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
-      "reserved": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": false,
-      "variation": false,
-      "set_id": "c1d109bc-ffd8-428f-8d7d-3f8d7e648046",
-      "set": "tsp",
-      "set_name": "Time Spiral",
-      "set_type": "expansion",
-      "set_uri": "https://api.scryfall.com/sets/c1d109bc-ffd8-428f-8d7d-3f8d7e648046",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Atsp&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/tsp?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/0000579f-7b35-4ed3-b44c-db2a538066fe/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A44623693-51d6-49ad-8cd7-140505caf02f&unique=prints",
-      "collector_number": "157",
-      "digital": false,
-      "rarity": "uncommon",
-      "flavor_text": "\"A rift opened, and our arrows were abruptly stilled. To move was to push the world. But the sliver's claw still twitched, red wounds appeared in Thed's chest, and ribbons of blood hung in the air.\"\n—Adom Capashen, Benalish hero",
-      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Paolo Parente",
-      "artist_ids": [
-        "d48dd097-720d-476a-8722-6a02854ae28b"
-      ],
-      "illustration_id": "2fcca987-364c-4738-a75b-099d8a26d614",
-      "border_color": "black",
-      "frame": "2003",
-      "full_art": false,
-      "textless": false,
-      "booster": true,
-      "story_spotlight": false,
-      "edhrec_rank": 6183,
-      "penny_rank": 11317,
-      "prices": {
-        "usd": "0.41",
-        "usd_foil": "4.48",
-        "usd_etched": null,
-        "eur": "0.08",
-        "eur_foil": "0.81",
-        "tix": "0.02"
-      },
       "related_uris": {
-        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=109722",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Fury+Sliver&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Fury+Sliver&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Fury+Sliver"
-      }
+      },
+      "prices": {
+        "eur": "0.08"
+      },
+      "id": "0000579f-7b35-4ed3-b44c-db2a538066fe"
     },
     {
-      "object": "card",
-      "id": "00006596-1166-4a79-8443-ca9f82e6db4e",
-      "oracle_id": "8ae3562f-28b7-4462-96ed-be0cf7052ccc",
-      "multiverse_ids": [
-        189637
-      ],
-      "mtgo_id": 34586,
-      "mtgo_foil_id": 34587,
-      "tcgplayer_id": 33347,
-      "cardmarket_id": 21851,
       "name": "Kor Outfitter",
-      "lang": "en",
-      "released_at": "2009-10-02",
-      "uri": "https://api.scryfall.com/cards/00006596-1166-4a79-8443-ca9f82e6db4e",
-      "scryfall_uri": "https://scryfall.com/card/zen/21/kor-outfitter?utm_source=api",
-      "layout": "normal",
-      "highres_image": true,
-      "image_status": "highres_scan",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
-        "normal": "https://cards.scryfall.io/normal/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
-        "large": "https://cards.scryfall.io/large/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
-        "png": "https://cards.scryfall.io/png/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.png?1562609251",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251",
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251"
       },
-      "mana_cost": "{W}{W}",
-      "cmc": 2,
-      "type_line": "Creature — Kor Soldier",
+      "type_line": "Legendary Creature",
       "oracle_text": "When Kor Outfitter enters the battlefield, you may attach target Equipment you control to target creature you control.",
       "power": "2",
       "toughness": "2",
-      "colors": [
-        "W"
-      ],
-      "color_identity": [
-        "W"
-      ],
-      "keywords": [],
-      "legalities": {
-        "standard": "not_legal",
-        "future": "not_legal",
-        "historic": "not_legal",
-        "gladiator": "not_legal",
-        "pioneer": "not_legal",
-        "explorer": "not_legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "brawl": "not_legal",
-        "historicbrawl": "not_legal",
-        "alchemy": "not_legal",
-        "paupercommander": "legal",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "legal"
-      },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
-      "reserved": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": false,
-      "variation": false,
-      "set_id": "eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2",
-      "set": "zen",
-      "set_name": "Zendikar",
-      "set_type": "expansion",
-      "set_uri": "https://api.scryfall.com/sets/eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Azen&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/zen?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/00006596-1166-4a79-8443-ca9f82e6db4e/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A8ae3562f-28b7-4462-96ed-be0cf7052ccc&unique=prints",
-      "collector_number": "21",
-      "digital": false,
-      "rarity": "common",
-      "flavor_text": "\"We take only what we need to survive. Believe me, you will need this.\"",
-      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Kieran Yanner",
-      "artist_ids": [
-        "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
-      ],
-      "illustration_id": "de0310d1-e97f-46e0-bc16-c980c2adedee",
-      "border_color": "black",
-      "frame": "2003",
-      "full_art": false,
-      "textless": false,
-      "booster": true,
-      "story_spotlight": false,
-      "edhrec_rank": 15369,
-      "penny_rank": 5034,
-      "prices": {
-        "usd": "0.24",
-        "usd_foil": "7.59",
-        "usd_etched": null,
-        "eur": "0.33",
-        "eur_foil": "3.49",
-        "tix": "0.03"
-      },
       "related_uris": {
-        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=189637",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Kor+Outfitter&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Kor+Outfitter&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Kor+Outfitter"
-      }
+      },
+      "prices": {
+        "eur": "0.33"
+      },
+      "id": "00006596-1166-4a79-8443-ca9f82e6db4e"
     },
     {
       "object": "card",
@@ -857,133 +651,21 @@
       }
     },
     {
-      "object": "card",
-      "id": "000376ef-8b6c-490d-98cb-d6de15b2e585",
-      "oracle_id": "49f0b317-6b06-482e-ab64-e02713e6c7e8",
-      "multiverse_ids": [
-        574523
-      ],
-      "mtgo_id": 102562,
-      "arena_id": 82095,
-      "tcgplayer_id": 283405,
-      "cardmarket_id": 672314,
       "name": "Battlewing Mystic",
-      "lang": "en",
-      "released_at": "2022-09-09",
-      "uri": "https://api.scryfall.com/cards/000376ef-8b6c-490d-98cb-d6de15b2e585",
-      "scryfall_uri": "https://scryfall.com/card/dmu/43/battlewing-mystic?utm_source=api",
-      "layout": "normal",
-      "highres_image": true,
-      "image_status": "highres_scan",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
-        "normal": "https://cards.scryfall.io/normal/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
-        "large": "https://cards.scryfall.io/large/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
-        "png": "https://cards.scryfall.io/png/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.png?1673306662",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662",
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662"
       },
-      "mana_cost": "{1}{U}",
-      "cmc": 2,
-      "type_line": "Creature — Bird Wizard",
+      "type_line": "Legendary Creature",
       "oracle_text": "Kicker {R} (You may pay an additional {R} as you cast this spell.)\nFlying\nWhen Battlewing Mystic enters the battlefield, if it was kicked, discard your hand, then draw two cards.",
       "power": "2",
       "toughness": "1",
-      "colors": [
-        "U"
-      ],
-      "color_identity": [
-        "R",
-        "U"
-      ],
-      "keywords": [
-        "Kicker",
-        "Flying"
-      ],
-      "legalities": {
-        "standard": "legal",
-        "future": "legal",
-        "historic": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "explorer": "legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "not_legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "brawl": "legal",
-        "historicbrawl": "legal",
-        "alchemy": "legal",
-        "paupercommander": "restricted",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "not_legal"
-      },
-      "games": [
-        "paper",
-        "arena",
-        "mtgo"
-      ],
-      "reserved": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": false,
-      "variation": false,
-      "set_id": "4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
-      "set": "dmu",
-      "set_name": "Dominaria United",
-      "set_type": "expansion",
-      "set_uri": "https://api.scryfall.com/sets/4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Admu&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/dmu?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/000376ef-8b6c-490d-98cb-d6de15b2e585/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A49f0b317-6b06-482e-ab64-e02713e6c7e8&unique=prints",
-      "collector_number": "43",
-      "digital": false,
-      "rarity": "uncommon",
-      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Borja Pindado",
-      "artist_ids": [
-        "1624a1a8-3492-4c0b-9abc-83dcf2653111"
-      ],
-      "illustration_id": "6ca11e60-dfb4-466f-b7bf-ebef3cd7b0b0",
-      "border_color": "black",
-      "frame": "2015",
-      "full_art": false,
-      "textless": false,
-      "booster": true,
-      "story_spotlight": false,
-      "edhrec_rank": 19564,
-      "penny_rank": 7875,
-      "preview": {
-        "source": "Wizards of the Coast",
-        "source_uri": "https://weibo.com/n/万智牌MAGIC",
-        "previewed_at": "2022-08-23"
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Battlewing+Mystic"
       },
       "prices": {
-        "usd": "0.03",
-        "usd_foil": "0.06",
-        "usd_etched": null,
-        "eur": "0.02",
-        "eur_foil": "0.20",
-        "tix": "0.01"
+        "eur": "0.02"
       },
-      "related_uris": {
-        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=574523",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Battlewing+Mystic&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Battlewing+Mystic&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "edhrec": "https://edhrec.com/route/?cc=Battlewing+Mystic"
-      }
+      "id": "000376ef-8b6c-490d-98cb-d6de15b2e585"
     },
     {
       "object": "card",
@@ -1246,13 +928,13 @@
       "image_uris": {
         "border_crop": "https://cards.scryfall.io/border_crop/front/b/0/b0247ee3-7799-43c2-9617-35b3edc91f22.jpg?1630551938"
       },
-      "type_line": "Enchantment",
+      "type_line": "Land",
       "oracle_text": "{T}: Add {U} for each artifact you control.",
       "related_uris": {
         "edhrec": "https://edhrec.com/route/?cc=Tolarian+Academy"
       },
       "prices": {
-        "eur": "55"
+        "eur": "60"
       },
       "id": "owbqcJd"
     }

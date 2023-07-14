@@ -7,6 +7,8 @@ import { Home } from './components/Home/Home'
 import { CreateCard } from './components/Card/CreateCard'
 import { CardDetailsPage } from './components/Card/CardDetailsPage'
 
+import './App.css'
+
 function App() {
   return (
     <>

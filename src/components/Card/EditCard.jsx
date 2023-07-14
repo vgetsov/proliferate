@@ -153,30 +153,34 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             helperText={errors.imageUrl?.message}
           />
           <Controller
-            render={({ field: { onChange, ...props } }) => (
-              <Autocomplete
-                fullWidth
-                disablePortal
-                options={CARD_TYPES}
-                onChange={(_, data) => onChange(data)}
-                defaultValue={type_line}
-                {...props}
-                renderInput={(params) => (
-                  <TextField
-                    {...params}
-                    margin="dense"
-                    id="cardType"
-                    label="Card type"
-                    name="cardType"
-                    fullWidth
-                    variant="filled"
-                    defaultValue={type_line}
-                    error={Boolean(errors.cardType)}
-                    helperText={errors.cardType?.message}
-                  />
-                )}
-              />
-            )}
+            render={({ field: { onChange, ...props } }) => {
+              console.log(type_line)
+
+              return (
+                <Autocomplete
+                  fullWidth
+                  disablePortal
+                  options={Array.from(new Set([type_line, ...CARD_TYPES]))}
+                  onChange={(_, data) => onChange(data)}
+                  {...props}
+                  value={type_line}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      margin="dense"
+                      id="cardType"
+                      label="Card type"
+                      name="cardType"
+                      fullWidth
+                      variant="filled"
+                      value={type_line}
+                      error={Boolean(errors.cardType)}
+                      helperText={errors.cardType?.message}
+                    />
+                  )}
+                />
+              )
+            }}
             name="cardType"
             control={control}
             rules={{
@@ -200,6 +204,7 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             label="Effect"
             name="effect"
             fullWidth
+            multiline
             variant="filled"
             defaultValue={oracle_text}
             error={Boolean(errors.effect)}
