@@ -1,21 +1,17 @@
-import Button from '@mui/material/Button'
-import TextField from '@mui/material/TextField'
-import Dialog from '@mui/material/Dialog'
-import DialogActions from '@mui/material/DialogActions'
-import DialogContent from '@mui/material/DialogContent'
-import { Autocomplete } from '@mui/material'
-import DialogTitle from '@mui/material/DialogTitle'
+import { useState } from 'react'
+import { toast } from 'react-toastify'
+import { Button, TextField, Dialog, DialogActions, DialogContent, DialogTitle } from '@mui/material'
 import PropTypes from 'prop-types'
-import { Controller, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import {
   ALL_CARDS_URL,
+  CANCEL,
   CARDNAME_MAX_LENGTH,
   CARDNAME_MAX_LENGTH_MESSAGE,
   CARDNAME_MIN_LENGTH,
   CARDNAME_MIN_LENGTH_MESSAGE,
   CARDNAME_REQUIRED,
   CARD_CREATED,
-  CARD_TYPES,
   CARD_TYPE_REQUIRED,
   EDHREC_LINK_PATTERN_MESSAGE,
   EDHREC_LINK_REQUIRED,
@@ -31,6 +27,7 @@ import {
   POWER_MIN_VALUE,
   POWER_MIN_VALUE_MESSAGE,
   POWER_REQUIRED,
+  SUBMIT_CHANGES,
   TOUGHNESS_MIN_VALUE,
   TOUGHNESS_MIN_VALUE_MESSAGE,
   TOUGHNESS_REQUIRED,
@@ -39,10 +36,9 @@ import {
   URL_PATTERN_REQUIRED,
 } from '../../common/constants'
 import { LoadingButton } from '@mui/lab'
-import { useState } from 'react'
 
 import EditIcon from '@mui/icons-material/Edit'
-import { toast } from 'react-toastify'
+import CloseIcon from '@mui/icons-material/Close'
 
 export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen }) => {
   const { id, name, image_uris, type_line, oracle_text, power, toughness, loyalty, related_uris, prices } = card
@@ -53,11 +49,18 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
     register,
     watch,
     handleSubmit,
-    control,
     formState: { errors },
   } = useForm({
     defaultValues: {
-      cardType: null,
+      name,
+      imageUrl: image_uris?.border_crop,
+      cardType: type_line,
+      effect: oracle_text,
+      power,
+      toughness,
+      loyalty,
+      edhrec_link: related_uris.edhrec,
+      price: prices.eur,
     },
   })
 
@@ -152,40 +155,18 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             error={Boolean(errors.imageUrl)}
             helperText={errors.imageUrl?.message}
           />
-          <Controller
-            render={({ field: { onChange, ...props } }) => {
-              console.log(type_line)
-
-              return (
-                <Autocomplete
-                  fullWidth
-                  disablePortal
-                  options={Array.from(new Set([type_line, ...CARD_TYPES]))}
-                  onChange={(_, data) => onChange(data)}
-                  {...props}
-                  value={type_line}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      margin="dense"
-                      id="cardType"
-                      label="Card type"
-                      name="cardType"
-                      fullWidth
-                      variant="filled"
-                      value={type_line}
-                      error={Boolean(errors.cardType)}
-                      helperText={errors.cardType?.message}
-                    />
-                  )}
-                />
-              )
-            }}
-            name="cardType"
-            control={control}
-            rules={{
+          <TextField
+            {...register('cardType', {
               required: CARD_TYPE_REQUIRED,
-            }}
+            })}
+            margin="dense"
+            id="cardType"
+            label="Card type"
+            name="cardType"
+            fullWidth
+            variant="filled"
+            error={Boolean(errors.cardType)}
+            helperText={errors.cardType?.message}
           />
           <TextField
             {...register('effect', {
@@ -317,10 +298,10 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             sx={{ mt: 3, mb: 2 }}
             onClick={handleSubmit(onSubmit)}
           >
-            Submit changes
+            {SUBMIT_CHANGES}
           </LoadingButton>
-          <Button onClick={() => setIsModalOpen(false)} color="error">
-            Cancel
+          <Button startIcon={<CloseIcon />} sx={{ mt: 3, mb: 2 }} onClick={() => setIsModalOpen(false)} color="error">
+            {CANCEL}
           </Button>
         </DialogActions>
       </Dialog>

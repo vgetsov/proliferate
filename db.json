@@ -22,7 +22,7 @@
       "image_uris": {
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/00006596-1166-4a79-8443-ca9f82e6db4e.jpg?1562609251"
       },
-      "type_line": "Legendary Creature",
+      "type_line": "Creature - Kor Soldier",
       "oracle_text": "When Kor Outfitter enters the battlefield, you may attach target Equipment you control to target creature you control.",
       "power": "2",
       "toughness": "2",
@@ -35,254 +35,38 @@
       "id": "00006596-1166-4a79-8443-ca9f82e6db4e"
     },
     {
-      "object": "card",
-      "id": "0000cd57-91fe-411f-b798-646e965eec37",
-      "oracle_id": "9f0d82ae-38bf-45d8-8cda-982b6ead1d72",
-      "multiverse_ids": [
-        435231
-      ],
-      "mtgo_id": 65170,
-      "mtgo_foil_id": 65171,
-      "arena_id": 66119,
-      "tcgplayer_id": 145764,
-      "cardmarket_id": 301766,
       "name": "Siren Lookout",
-      "lang": "en",
-      "released_at": "2017-09-29",
-      "uri": "https://api.scryfall.com/cards/0000cd57-91fe-411f-b798-646e965eec37",
-      "scryfall_uri": "https://scryfall.com/card/xln/78/siren-lookout?utm_source=api",
-      "layout": "normal",
-      "highres_image": true,
-      "image_status": "highres_scan",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
-        "normal": "https://cards.scryfall.io/normal/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
-        "large": "https://cards.scryfall.io/large/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
-        "png": "https://cards.scryfall.io/png/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.png?1562549609",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609",
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0000cd57-91fe-411f-b798-646e965eec37.jpg?1562549609"
       },
-      "mana_cost": "{2}{U}",
-      "cmc": 3,
-      "type_line": "Creature — Siren Pirate",
+      "type_line": "Creature",
       "oracle_text": "Flying\nWhen Siren Lookout enters the battlefield, it explores. (Reveal the top card of your library. Put that card into your hand if it's a land. Otherwise, put a +1/+1 counter on this creature, then put the card back or put it into your graveyard.)",
       "power": "1",
       "toughness": "2",
-      "colors": [
-        "U"
-      ],
-      "color_identity": [
-        "U"
-      ],
-      "keywords": [
-        "Flying",
-        "Explore"
-      ],
-      "legalities": {
-        "standard": "not_legal",
-        "future": "not_legal",
-        "historic": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "explorer": "legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "brawl": "not_legal",
-        "historicbrawl": "legal",
-        "alchemy": "not_legal",
-        "paupercommander": "legal",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "not_legal"
-      },
-      "games": [
-        "arena",
-        "paper",
-        "mtgo"
-      ],
-      "reserved": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": false,
-      "variation": false,
-      "set_id": "fe0dad85-54bc-4151-9200-d68da84dd0f2",
-      "set": "xln",
-      "set_name": "Ixalan",
-      "set_type": "expansion",
-      "set_uri": "https://api.scryfall.com/sets/fe0dad85-54bc-4151-9200-d68da84dd0f2",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Axln&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/xln?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/0000cd57-91fe-411f-b798-646e965eec37/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A9f0d82ae-38bf-45d8-8cda-982b6ead1d72&unique=prints",
-      "collector_number": "78",
-      "digital": false,
-      "rarity": "common",
-      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Chris Rallis",
-      "artist_ids": [
-        "a8e7b854-b15a-421a-b66d-6e68187ae285"
-      ],
-      "illustration_id": "e0a40a54-9216-4c86-b9e3-daed04abc310",
-      "border_color": "black",
-      "frame": "2015",
-      "full_art": false,
-      "textless": false,
-      "booster": true,
-      "story_spotlight": false,
-      "edhrec_rank": 13700,
-      "penny_rank": 8707,
-      "prices": {
-        "usd": "0.04",
-        "usd_foil": "0.22",
-        "usd_etched": null,
-        "eur": "0.10",
-        "eur_foil": "0.25",
-        "tix": "0.03"
-      },
       "related_uris": {
-        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=435231",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Siren+Lookout&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Siren+Lookout&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
         "edhrec": "https://edhrec.com/route/?cc=Siren+Lookout"
-      }
+      },
+      "prices": {
+        "eur": "0.10"
+      },
+      "id": "0000cd57-91fe-411f-b798-646e965eec37"
     },
     {
-      "object": "card",
-      "id": "0001f1ef-b957-4a55-b47f-14839cdbab6f",
-      "oracle_id": "ef027846-be81-4959-a6b5-56bd01b1e68a",
-      "multiverse_ids": [
-        472997
-      ],
-      "mtgo_id": 78170,
-      "arena_id": 70182,
-      "tcgplayer_id": 198861,
-      "cardmarket_id": 400134,
       "name": "Venerable Knight",
-      "lang": "en",
-      "released_at": "2019-10-04",
-      "uri": "https://api.scryfall.com/cards/0001f1ef-b957-4a55-b47f-14839cdbab6f",
-      "scryfall_uri": "https://scryfall.com/card/eld/35/venerable-knight?utm_source=api",
-      "layout": "normal",
-      "highres_image": true,
-      "image_status": "highres_scan",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
-        "normal": "https://cards.scryfall.io/normal/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
-        "large": "https://cards.scryfall.io/large/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
-        "png": "https://cards.scryfall.io/png/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.png?1572489814",
-        "art_crop": "https://cards.scryfall.io/art_crop/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814",
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg?1572489814"
       },
-      "mana_cost": "{W}",
-      "cmc": 1,
-      "type_line": "Creature — Human Knight",
+      "type_line": "Creature - Human Knight",
       "oracle_text": "When Venerable Knight dies, put a +1/+1 counter on target Knight you control.",
       "power": "2",
       "toughness": "1",
-      "colors": [
-        "W"
-      ],
-      "color_identity": [
-        "W"
-      ],
-      "keywords": [],
-      "legalities": {
-        "standard": "not_legal",
-        "future": "not_legal",
-        "historic": "legal",
-        "gladiator": "legal",
-        "pioneer": "legal",
-        "explorer": "legal",
-        "modern": "legal",
-        "legacy": "legal",
-        "pauper": "not_legal",
-        "vintage": "legal",
-        "penny": "legal",
-        "commander": "legal",
-        "oathbreaker": "legal",
-        "brawl": "not_legal",
-        "historicbrawl": "legal",
-        "alchemy": "not_legal",
-        "paupercommander": "restricted",
-        "duel": "legal",
-        "oldschool": "not_legal",
-        "premodern": "not_legal",
-        "predh": "not_legal"
-      },
-      "games": [
-        "arena",
-        "paper",
-        "mtgo"
-      ],
-      "reserved": false,
-      "foil": true,
-      "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
-      "oversized": false,
-      "promo": false,
-      "reprint": false,
-      "variation": false,
-      "set_id": "a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
-      "set": "eld",
-      "set_name": "Throne of Eldraine",
-      "set_type": "expansion",
-      "set_uri": "https://api.scryfall.com/sets/a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
-      "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aeld&unique=prints",
-      "scryfall_set_uri": "https://scryfall.com/sets/eld?utm_source=api",
-      "rulings_uri": "https://api.scryfall.com/cards/0001f1ef-b957-4a55-b47f-14839cdbab6f/rulings",
-      "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Aef027846-be81-4959-a6b5-56bd01b1e68a&unique=prints",
-      "collector_number": "35",
-      "digital": false,
-      "rarity": "uncommon",
-      "flavor_text": "\"May this blade guide you on your great journey, as it did me on mine.\"",
-      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
-      "artist": "Colin Boyer",
-      "artist_ids": [
-        "9c201dbe-db56-429a-87e6-189ea70c2632"
-      ],
-      "illustration_id": "619c439b-8b4d-4c0c-9f86-9fdae9bd1c25",
-      "border_color": "black",
-      "frame": "2015",
-      "full_art": false,
-      "textless": false,
-      "booster": true,
-      "story_spotlight": false,
-      "edhrec_rank": 13220,
-      "penny_rank": 1496,
-      "preview": {
-        "source": "Autumn Burchett",
-        "source_uri": "https://twitter.com/AutumnLilyMTG/status/1172207122555293696",
-        "previewed_at": "2019-09-04"
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Venerable+Knight"
       },
       "prices": {
-        "usd": "0.10",
-        "usd_foil": "0.28",
-        "usd_etched": null,
-        "eur": "0.02",
-        "eur_foil": "0.25",
-        "tix": "0.03"
+        "eur": "0.02"
       },
-      "related_uris": {
-        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=472997",
-        "tcgplayer_infinite_articles": "https://infinite.tcgplayer.com/search?contentMode=article&game=magic&partner=scryfall&q=Venerable+Knight&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "tcgplayer_infinite_decks": "https://infinite.tcgplayer.com/search?contentMode=deck&game=magic&partner=scryfall&q=Venerable+Knight&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
-        "edhrec": "https://edhrec.com/route/?cc=Venerable+Knight"
-      }
+      "id": "0001f1ef-b957-4a55-b47f-14839cdbab6f"
     },
     {
       "object": "card",
@@ -655,7 +439,7 @@
       "image_uris": {
         "border_crop": "https://cards.scryfall.io/border_crop/front/0/0/000376ef-8b6c-490d-98cb-d6de15b2e585.jpg?1673306662"
       },
-      "type_line": "Legendary Creature",
+      "type_line": "Creature - Bird Wizard",
       "oracle_text": "Kicker {R} (You may pay an additional {R} as you cast this spell.)\nFlying\nWhen Battlewing Mystic enters the battlefield, if it was kicked, discard your hand, then draw two cards.",
       "power": "2",
       "toughness": "1",

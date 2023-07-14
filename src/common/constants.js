@@ -100,14 +100,17 @@ export const CARD_NOT_FOUND = 'Card not found'
 export const FAILED_TO_LOAD_CARDS = 'Failed to load cards'
 export const FAILED_TO_LOAD_CARD = 'Failed to load the card'
 
-export const CARD_TYPES = [
-  'Creature',
-  'Legendary Creature',
-  'Planeswalker',
-  'Artifact',
-  'Enchantment',
-  'Battle',
-  'Instant',
-  'Sorcery',
-  'Land',
-]
+export const SUBMIT_CHANGES = 'Submit changes'
+export const CANCEL = 'Cancel'
+
+// export const CARD_TYPES = [
+//   'Creature',
+//   'Legendary Creature',
+//   'Planeswalker',
+//   'Artifact',
+//   'Enchantment',
+//   'Battle',
+//   'Instant',
+//   'Sorcery',
+//   'Land',
+// ]
