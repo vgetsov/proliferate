@@ -86,6 +86,9 @@ export const CARD_CREATED = 'Card created successfully'
 export const FAILED_TO_CREATE = 'Failed to create the card'
 export const CREATE_A_MTG_CARD = 'Create a MTG card'
 
+export const CARD_EDITED = 'Card edited successfully'
+export const FAILED_TO_EDIT = 'Failed to edit the card'
+
 export const CARD_DELETED = 'Card deleted successfully'
 export const FAILED_TO_DELETE = 'Failed to delete the card'
 

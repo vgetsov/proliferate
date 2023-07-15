@@ -13,7 +13,6 @@ import {
 import { toast } from 'react-toastify'
 import { SingleCard } from './SingleCard'
 import { CardSkeleton } from './CardSkeleton'
-import { EditCard } from './EditCard'
 
 export const CardDetailsPage = () => {
   const { id } = useParams()
@@ -22,8 +21,6 @@ export const CardDetailsPage = () => {
 
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
-
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const fetchSingleCard = useCallback(async () => {
     setIsLoading(true)
@@ -69,13 +66,7 @@ export const CardDetailsPage = () => {
         CARD_NOT_FOUND
       ) : (
         <>
-          <SingleCard card={card} setIsModalOpen={setIsModalOpen} />
-          <EditCard
-            card={card}
-            fetchSingleCard={fetchSingleCard}
-            isModalOpen={isModalOpen}
-            setIsModalOpen={setIsModalOpen}
-          />
+          <SingleCard card={card} fetchSingleCard={fetchSingleCard} />
         </>
       )}
     </Box>

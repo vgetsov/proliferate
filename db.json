@@ -721,6 +721,38 @@
         "eur": "60"
       },
       "id": "owbqcJd"
+    },
+    {
+      "name": "Temple of Deceit",
+      "image_uris": {
+        "border_crop": "https://cards.scryfall.io/border_crop/front/e/3/e3d4fd29-dab5-481f-94c9-eeb70f3c29dd.jpg?1581481259"
+      },
+      "type_line": "Land",
+      "oracle_text": "Temple of Deceit enters the battlefield tapped.  When Temple of Deceit enters the battlefield, scry 1.  {T}: Add {U} or {B}.",
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Temple+of+Deceit"
+      },
+      "prices": {
+        "eur": "0.26"
+      },
+      "id": "pTrBmvJ"
+    },
+    {
+      "name": "Mudbutton Torchrunner",
+      "image_uris": {
+        "border_crop": "https://cards.scryfall.io/border_crop/front/5/0/50575eab-6c23-4f63-9667-458416c5caa5.jpg?1562348024"
+      },
+      "type_line": "Creature — Goblin Warrior",
+      "oracle_text": "When Mudbutton Torchrunner dies, it deals 3 damage to any target.",
+      "power": "1",
+      "toughness": "1",
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Mudbutton+Torchrunner"
+      },
+      "prices": {
+        "eur": "0.10"
+      },
+      "id": "E2ZmNWI"
     }
   ]
 }

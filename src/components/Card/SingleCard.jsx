@@ -8,9 +8,9 @@ import PropTypes from 'prop-types'
 
 import { EDHREC_BTN_TEXT, EDIT, PRICE_TEXT } from '../../common/constants'
 
-import EditIcon from '@mui/icons-material/Edit'
+import { FormCard } from './FormCard'
 
-export const SingleCard = ({ card, setIsModalOpen }) => {
+export const SingleCard = ({ card, fetchSingleCard }) => {
   const { name, image_uris, type_line, oracle_text, power, toughness, loyalty, related_uris, prices } = card
 
   return (
@@ -51,9 +51,7 @@ export const SingleCard = ({ card, setIsModalOpen }) => {
           )}
         </CardContent>
         <CardActions className="card-action-btns-wrapper">
-          <Button onClick={() => setIsModalOpen(true)} variant="outlined" size="small" startIcon={<EditIcon />}>
-            {EDIT}
-          </Button>
+          <FormCard card={card} onSuccessCallback={fetchSingleCard} formType={EDIT} />
         </CardActions>
         <CardActions className="edhrec-action-btn-wrapper">
           <Button
@@ -74,5 +72,5 @@ export const SingleCard = ({ card, setIsModalOpen }) => {
 
 SingleCard.propTypes = {
   card: PropTypes.object.isRequired,
-  setIsModalOpen: PropTypes.func.isRequired,
+  fetchSingleCard: PropTypes.func.isRequired,
 }

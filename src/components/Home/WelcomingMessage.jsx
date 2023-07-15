@@ -1,12 +1,11 @@
-import { Box, Button, Container, Typography } from '@mui/material'
-import { CREATE_A_CARD, WELCOMING_MESSAGE } from '../../common/constants'
-import { useNavigate } from 'react-router-dom'
+import { Box, Container, Typography } from '@mui/material'
+import { CREATE, WELCOMING_MESSAGE } from '../../common/constants'
+import PropTypes from 'prop-types'
 
+import { FormCard } from '../Card/FormCard'
 import './WelcomingMessage.scss'
 
-export const WelcomingMessage = () => {
-  const navigate = useNavigate()
-
+export const WelcomingMessage = ({ fetchCards }) => {
   return (
     <Box>
       <Container
@@ -16,10 +15,12 @@ export const WelcomingMessage = () => {
         <Typography variant="h6" sx={{ fontFamily: 'Lato' }}>
           {WELCOMING_MESSAGE}
         </Typography>
-        <Button onClick={() => navigate('/create-card')} variant="outlined" size="small" color="success">
-          {CREATE_A_CARD}
-        </Button>
+        <FormCard onSuccessCallback={fetchCards} formType={CREATE} />
       </Container>
     </Box>
   )
+}
+
+WelcomingMessage.propTypes = {
+  fetchCards: PropTypes.func.isRequired,
 }

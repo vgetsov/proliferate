@@ -12,15 +12,20 @@ import {
   CARDNAME_MIN_LENGTH_MESSAGE,
   CARDNAME_REQUIRED,
   CARD_CREATED,
+  CARD_EDITED,
   CARD_TYPE_REQUIRED,
+  CREATE,
+  CREATE_A_CARD,
   EDHREC_LINK_PATTERN_MESSAGE,
   EDHREC_LINK_REQUIRED,
+  EDIT,
   EFFECT_MAX_LENGTH,
   EFFECT_MAX_LENGTH_MESSAGE,
   EFFECT_MIN_LENGTH,
   EFFECT_MIN_LENGTH_MESSAGE,
   EFFECT_REQUIRED,
   FAILED_TO_CREATE,
+  FAILED_TO_EDIT,
   LOYALTY_MIN_VALUE,
   LOYALTY_MIN_VALUE_MESSAGE,
   LOYALTY_REQUIRED,
@@ -37,13 +42,16 @@ import {
 } from '../../common/constants'
 import { LoadingButton } from '@mui/lab'
 
+import AddIcon from '@mui/icons-material/Add'
+import SaveIcon from '@mui/icons-material/Save'
 import EditIcon from '@mui/icons-material/Edit'
 import CloseIcon from '@mui/icons-material/Close'
 
-export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen }) => {
-  const { id, name, image_uris, type_line, oracle_text, power, toughness, loyalty, related_uris, prices } = card
+export const FormCard = ({ card, formType, onSuccessCallback }) => {
+  const { id, name, image_uris, type_line, oracle_text, power, toughness, loyalty, related_uris, prices } = card ?? {}
 
   const [isLoading, setIsLoading] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const {
     register,
@@ -59,19 +67,21 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
       power,
       toughness,
       loyalty,
-      edhrec_link: related_uris.edhrec,
-      price: prices.eur,
+      edhrec_link: related_uris?.edhrec,
+      price: prices?.eur,
     },
   })
 
   const watchCardType = watch('cardType', null)
 
   const onSubmit = async ({ name, imageUrl, cardType, effect, power, toughness, loyalty, edhrec_link, price }) => {
+    console.log(111)
+
     try {
       setIsLoading(true)
 
-      const editCardData = await fetch(`${ALL_CARDS_URL}/${id}`, {
-        method: 'PUT',
+      const cardDataResponse = await fetch(`${ALL_CARDS_URL}/${formType === EDIT ? id : ''}`, {
+        method: formType === CREATE ? 'POST' : formType === EDIT ? 'PUT' : '',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name,
@@ -92,18 +102,18 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
         }),
       })
 
-      console.log(editCardData) // TODO
+      console.log(222)
 
-      toast.success(CARD_CREATED)
+      console.log(cardDataResponse) // TODO
+
+      toast.success(formType === CREATE ? CARD_CREATED : formType === EDIT ? CARD_EDITED : '')
 
       setIsLoading(false)
       setIsModalOpen(false)
 
-      fetchSingleCard()
-
-      //   navigate('/')
+      onSuccessCallback() // fetchAllCards | fetchSingleCard
     } catch (error) {
-      toast.error(FAILED_TO_CREATE)
+      toast.error(formType === CREATE ? FAILED_TO_CREATE : formType === EDIT ? FAILED_TO_EDIT : '')
     } finally {
       setIsLoading(false)
     }
@@ -111,8 +121,16 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
 
   return (
     <div>
+      <Button
+        onClick={() => setIsModalOpen(true)}
+        variant="outlined"
+        size="small"
+        startIcon={formType === CREATE ? <AddIcon /> : formType === EDIT ? <EditIcon /> : ''}
+      >
+        {formType === CREATE ? CREATE : formType === EDIT ? EDIT : ''}
+      </Button>
       <Dialog open={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <DialogTitle>Edit {name}</DialogTitle>
+        <DialogTitle>{formType === CREATE ? CREATE_A_CARD : formType === EDIT ? `${EDIT} ${name}` : ''}</DialogTitle>
         <DialogContent>
           <TextField
             {...register('name', {
@@ -133,7 +151,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             name="name"
             fullWidth
             variant="filled"
-            defaultValue={name}
             error={Boolean(errors.name)}
             helperText={errors.name?.message}
           />
@@ -151,7 +168,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             name="imageUrl"
             fullWidth
             variant="filled"
-            defaultValue={image_uris?.border_crop}
             error={Boolean(errors.imageUrl)}
             helperText={errors.imageUrl?.message}
           />
@@ -187,7 +203,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             fullWidth
             multiline
             variant="filled"
-            defaultValue={oracle_text}
             error={Boolean(errors.effect)}
             helperText={errors.effect?.message}
           />
@@ -208,7 +223,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
                 type="number"
                 fullWidth
                 variant="filled"
-                value={power}
                 error={Boolean(errors.power)}
                 helperText={errors.power?.message}
               />
@@ -226,7 +240,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
                 name="toughness"
                 type="number"
                 fullWidth
-                defaultValue={toughness}
                 variant="filled"
                 error={Boolean(errors.toughness)}
                 helperText={errors.toughness?.message}
@@ -249,7 +262,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
               type="number"
               fullWidth
               variant="filled"
-              defaultValue={loyalty}
               error={Boolean(errors.loyalty)}
               helperText={errors.loyalty?.message}
             />
@@ -268,7 +280,6 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             name="edhrec_link"
             fullWidth
             variant="filled"
-            defaultValue={related_uris.edhrec}
             error={Boolean(errors.edhrec_link)}
             helperText={errors.edhrec_link?.message}
           />
@@ -283,35 +294,58 @@ export const EditCard = ({ card, fetchSingleCard, isModalOpen, setIsModalOpen })
             fullWidth
             variant="filled"
             type="number"
-            defaultValue={prices.eur}
             error={Boolean(errors.price)}
             helperText={errors.price?.message}
           />
         </DialogContent>
         <DialogActions>
-          <LoadingButton
-            type="submit"
-            color="primary"
-            loading={isLoading}
-            loadingPosition="start"
-            startIcon={<EditIcon />}
-            sx={{ mt: 3, mb: 2 }}
-            onClick={handleSubmit(onSubmit)}
-          >
-            {SUBMIT_CHANGES}
-          </LoadingButton>
-          <Button startIcon={<CloseIcon />} sx={{ mt: 3, mb: 2 }} onClick={() => setIsModalOpen(false)} color="error">
-            {CANCEL}
-          </Button>
+          {formType === CREATE ? (
+            <LoadingButton
+              type="submit"
+              color="primary"
+              loading={isLoading}
+              loadingPosition="start"
+              startIcon={<SaveIcon />}
+              variant="outlined"
+              fullWidth
+              sx={{ mt: 3, mb: 2 }}
+              onClick={handleSubmit(onSubmit)}
+            >
+              {CREATE_A_CARD}
+            </LoadingButton>
+          ) : formType === EDIT ? (
+            <>
+              <LoadingButton
+                type="submit"
+                color="primary"
+                loading={isLoading}
+                loadingPosition="start"
+                startIcon={<EditIcon />}
+                sx={{ mt: 3, mb: 2 }}
+                onClick={handleSubmit(onSubmit)}
+              >
+                {SUBMIT_CHANGES}
+              </LoadingButton>
+              <Button
+                startIcon={<CloseIcon />}
+                sx={{ mt: 3, mb: 2 }}
+                onClick={() => setIsModalOpen(false)}
+                color="error"
+              >
+                {CANCEL}
+              </Button>
+            </>
+          ) : (
+            ''
+          )}
         </DialogActions>
       </Dialog>
     </div>
   )
 }
 
-EditCard.propTypes = {
-  card: PropTypes.object.isRequired,
-  fetchSingleCard: PropTypes.func.isRequired,
-  isModalOpen: PropTypes.bool.isRequired,
-  setIsModalOpen: PropTypes.func.isRequired,
+FormCard.propTypes = {
+  card: PropTypes.object,
+  onSuccessCallback: PropTypes.func.isRequired,
+  formType: PropTypes.string.isRequired,
 }
