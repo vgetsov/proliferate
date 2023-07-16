@@ -21,14 +21,22 @@ export const CardsList = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
   const [cardTypes, setCardTypes] = useState([])
-  const [selectedTypes, setSelectedTypes] = useState([])
+  const [selectedCardTypes, setSelectedCardTypes] = useState([])
+
+  const [selectedSortAttribute, setSelectedSortAttribute] = useState('')
+
+  console.log(selectedSortAttribute)
 
   const fetchCards = useCallback(async () => {
     setIsLoading(true)
 
     try {
-      const queryParams = selectedTypes.map((type) => `type_line=${encodeURIComponent(type)}`).join('&')
-      const response = await fetch(`${ALL_CARDS_URL}?${queryParams}`)
+      const filterQueryParams = selectedCardTypes.map((type) => `type_line=${encodeURIComponent(type)}`).join('&')
+      const sortQueryParams = `_sort=${encodeURIComponent(
+        selectedSortAttribute.toLowerCase().replace('price', 'prices.eur')
+      )}`
+
+      const response = await fetch(`${ALL_CARDS_URL}?${filterQueryParams}&${sortQueryParams}`)
 
       const data = await response.json()
 
@@ -46,30 +54,44 @@ export const CardsList = () => {
     } finally {
       setIsLoading(false)
     }
-  }, [selectedTypes])
+  }, [selectedCardTypes, selectedSortAttribute])
 
   useEffect(() => {
     fetchCards()
   }, [fetchCards])
 
   const handleTypeChange = (_, types) => {
-    setSelectedTypes(types)
+    setSelectedCardTypes(types)
+  }
+
+  const handleSortAttributeChange = (_, sortAttribute) => {
+    setSelectedSortAttribute(sortAttribute ?? '')
   }
 
   return (
     <>
       <WelcomingMessage fetchCards={fetchCards} />
-      <Container>
+      <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
         <Stack spacing={3} marginBottom={3} sx={{ width: 500 }}>
           <Autocomplete
             multiple
-            id="tags-standard"
             options={cardTypes}
             getOptionLabel={(option) => option}
-            value={selectedTypes}
+            value={selectedCardTypes}
             onChange={handleTypeChange}
             renderInput={(params) => (
               <TextField {...params} variant="standard" label="Filter by card type" placeholder="Types" />
+            )}
+          />
+        </Stack>
+        <Stack spacing={3} marginBottom={3} sx={{ width: 500 }}>
+          <Autocomplete
+            options={['Name', 'Price']}
+            // getOptionLabel={(option) => option}
+            value={selectedSortAttribute}
+            onChange={handleSortAttributeChange}
+            renderInput={(params) => (
+              <TextField {...params} variant="standard" label="Sort by" placeholder="Sorting options" />
             )}
           />
         </Stack>

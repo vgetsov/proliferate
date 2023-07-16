@@ -22,7 +22,7 @@ export const SingleCard = ({ card, fetchSingleCard }) => {
       </Card>
       <Card sx={{ maxWidth: 345 }}>
         <CardContent className="card-content-wrapper">
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" className="card-name-field-text">
             {name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
