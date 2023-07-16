@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Box, Button, Container, Typography } from '@mui/material'
+import { Box, Button, Container, Typography, Autocomplete, TextField, Stack } from '@mui/material'
 import { toast } from 'react-toastify'
 
 import { CardSkeleton } from './CardSkeleton'
@@ -20,16 +20,23 @@ export const CardsList = () => {
   const [cards, setCards] = useState()
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
+  const [cardTypes, setCardTypes] = useState([])
+  const [selectedTypes, setSelectedTypes] = useState([])
 
   const fetchCards = useCallback(async () => {
     setIsLoading(true)
 
     try {
-      const response = await fetch(ALL_CARDS_URL)
+      const queryParams = selectedTypes.map((type) => `type_line=${encodeURIComponent(type)}`).join('&')
+      const response = await fetch(`${ALL_CARDS_URL}?${queryParams}`)
 
       const data = await response.json()
 
       setCards(data)
+
+      if (cardTypes.length === 0) {
+        setCardTypes(Array.from(new Set(data?.map((card) => card.type_line))))
+      }
 
       setIsError(false)
     } catch (error) {
@@ -39,15 +46,34 @@ export const CardsList = () => {
     } finally {
       setIsLoading(false)
     }
-  }, [])
+  }, [selectedTypes])
 
   useEffect(() => {
     fetchCards()
   }, [fetchCards])
 
+  const handleTypeChange = (_, types) => {
+    setSelectedTypes(types)
+  }
+
   return (
     <>
       <WelcomingMessage fetchCards={fetchCards} />
+      <Container>
+        <Stack spacing={3} marginBottom={3} sx={{ width: 500 }}>
+          <Autocomplete
+            multiple
+            id="tags-standard"
+            options={cardTypes}
+            getOptionLabel={(option) => option}
+            value={selectedTypes}
+            onChange={handleTypeChange}
+            renderInput={(params) => (
+              <TextField {...params} variant="standard" label="Filter by card type" placeholder="Types" />
+            )}
+          />
+        </Stack>
+      </Container>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
         {isError ? (
           <Container sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>

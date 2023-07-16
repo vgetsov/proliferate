@@ -125,9 +125,10 @@ export const FormCard = ({ card, formType, onSuccessCallback }) => {
         onClick={() => setIsModalOpen(true)}
         variant="outlined"
         size="small"
+        color={formType === CREATE ? 'success' : formType === EDIT ? 'info' : ''}
         startIcon={formType === CREATE ? <AddIcon /> : formType === EDIT ? <EditIcon /> : ''}
       >
-        {formType === CREATE ? CREATE : formType === EDIT ? EDIT : ''}
+        {formType === CREATE ? CREATE_A_CARD : formType === EDIT ? EDIT : ''}
       </Button>
       <Dialog open={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <DialogTitle>{formType === CREATE ? CREATE_A_CARD : formType === EDIT ? `${EDIT} ${name}` : ''}</DialogTitle>
