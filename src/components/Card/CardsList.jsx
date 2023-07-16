@@ -25,8 +25,6 @@ export const CardsList = () => {
 
   const [selectedSortAttribute, setSelectedSortAttribute] = useState('')
 
-  console.log(selectedSortAttribute)
-
   const fetchCards = useCallback(async () => {
     setIsLoading(true)
 

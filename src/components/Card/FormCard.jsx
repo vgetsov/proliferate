@@ -75,8 +75,6 @@ export const FormCard = ({ card, formType, onSuccessCallback }) => {
   const watchCardType = watch('cardType', null)
 
   const onSubmit = async ({ name, imageUrl, cardType, effect, power, toughness, loyalty, edhrec_link, price }) => {
-    console.log(111)
-
     try {
       setIsLoading(true)
 
@@ -101,8 +99,6 @@ export const FormCard = ({ card, formType, onSuccessCallback }) => {
           },
         }),
       })
-
-      console.log(222)
 
       console.log(cardDataResponse) // TODO
 
