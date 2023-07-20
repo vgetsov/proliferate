@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Box, Button, Container, Typography, Autocomplete, TextField, Stack } from '@mui/material'
+import { Box, Button, Container, Typography, Autocomplete, TextField, Stack, IconButton, Tooltip } from '@mui/material'
 import { toast } from 'react-toastify'
 
 import { CardSkeleton } from './CardSkeleton'
@@ -16,14 +16,18 @@ import {
 } from '../../common/constants'
 import { WelcomingMessage } from '../Home/WelcomingMessage'
 
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward'
+
 export const CardsList = () => {
   const [cards, setCards] = useState()
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
   const [cardTypes, setCardTypes] = useState([])
   const [selectedCardTypes, setSelectedCardTypes] = useState([])
-
   const [selectedSortAttribute, setSelectedSortAttribute] = useState('')
+  const [isSortedAscending, setIsSortedAscending] = useState(true)
+  const [searchTerm, setSearchTerm] = useState('')
 
   const fetchCards = useCallback(async () => {
     setIsLoading(true)
@@ -33,8 +37,12 @@ export const CardsList = () => {
       const sortQueryParams = `_sort=${encodeURIComponent(
         selectedSortAttribute.toLowerCase().replace('price', 'prices.eur')
       )}`
+      const orderQueryParams = `_order=${encodeURIComponent(isSortedAscending ? 'asc' : 'desc')}`
+      const searchQueryParams = `q=${encodeURIComponent(searchTerm)}`
 
-      const response = await fetch(`${ALL_CARDS_URL}?${filterQueryParams}&${sortQueryParams}`)
+      const response = await fetch(
+        `${ALL_CARDS_URL}?${filterQueryParams}&${sortQueryParams}&${orderQueryParams}&${searchQueryParams}`
+      )
 
       const data = await response.json()
 
@@ -52,7 +60,7 @@ export const CardsList = () => {
     } finally {
       setIsLoading(false)
     }
-  }, [selectedCardTypes, selectedSortAttribute])
+  }, [selectedCardTypes, selectedSortAttribute, isSortedAscending, searchTerm])
 
   useEffect(() => {
     fetchCards()
@@ -64,6 +72,16 @@ export const CardsList = () => {
 
   const handleSortAttributeChange = (_, sortAttribute) => {
     setSelectedSortAttribute(sortAttribute ?? '')
+  }
+
+  const handleSortingOrder = () => {
+    setIsSortedAscending(!isSortedAscending)
+    // fetchCards()
+  }
+
+  const handleSearchInput = (event) => {
+    setSearchTerm(event.target.value)
+    // fetchCards()
   }
 
   return (
@@ -78,20 +96,41 @@ export const CardsList = () => {
             value={selectedCardTypes}
             onChange={handleTypeChange}
             renderInput={(params) => (
-              <TextField {...params} variant="standard" label="Filter by card type" placeholder="Types" />
+              <TextField {...params} variant="filled" label="Filter by card type" placeholder="Types" />
             )}
+          />
+        </Stack>
+        <Stack spacing={3} marginBottom={3} sx={{ width: 500 }}>
+          <TextField
+            value={searchTerm}
+            onChange={handleSearchInput}
+            variant="filled"
+            label="Search"
+            placeholder="Search for a card..."
           />
         </Stack>
         <Stack spacing={3} marginBottom={3} sx={{ width: 500 }}>
           <Autocomplete
             options={['Name', 'Price']}
-            // getOptionLabel={(option) => option}
             value={selectedSortAttribute}
             onChange={handleSortAttributeChange}
             renderInput={(params) => (
-              <TextField {...params} variant="standard" label="Sort by" placeholder="Sorting options" />
+              <TextField {...params} variant="filled" label="Sort by" placeholder="Sorting options" />
             )}
           />
+        </Stack>
+        <Stack spacing={3} marginBottom={3}>
+          <IconButton color="primary" onClick={handleSortingOrder}>
+            {isSortedAscending ? (
+              <Tooltip title="Ascending">
+                <ArrowUpwardIcon />
+              </Tooltip>
+            ) : (
+              <Tooltip title="Descending">
+                <ArrowDownwardIcon />
+              </Tooltip>
+            )}
+          </IconButton>
         </Stack>
       </Container>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '10px' }}>
@@ -115,21 +154,23 @@ export const CardsList = () => {
         ) : cards.length === 0 ? (
           NO_CARDS_YET
         ) : (
-          cards.map(({ id, name, image_uris, type_line, oracle_text, power, toughness, related_uris, prices }) => (
-            <CustomCard
-              key={id}
-              id={id}
-              name={name}
-              image={image_uris?.border_crop}
-              cardType={type_line}
-              effect={oracle_text}
-              power={power}
-              toughness={toughness}
-              edhrec_link={related_uris?.edhrec}
-              price={prices?.eur}
-              fetchCards={fetchCards}
-            />
-          ))
+          cards
+            .filter((card) => card.name.toLowerCase().includes(searchTerm.toLowerCase()))
+            .map(({ id, name, image_uris, type_line, oracle_text, power, toughness, related_uris, prices }) => (
+              <CustomCard
+                key={id}
+                id={id}
+                name={name}
+                image={image_uris?.border_crop}
+                cardType={type_line}
+                effect={oracle_text}
+                power={power}
+                toughness={toughness}
+                edhrec_link={related_uris?.edhrec}
+                price={prices?.eur}
+                fetchCards={fetchCards}
+              />
+            ))
         )}
       </Box>
     </>

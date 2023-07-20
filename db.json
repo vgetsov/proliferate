@@ -7,13 +7,13 @@
       },
       "type_line": "Creature",
       "oracle_text": "All Sliver creatures have double strike.",
-      "power": "3",
-      "toughness": "3",
+      "power": "5",
+      "toughness": "5",
       "related_uris": {
         "edhrec": "https://edhrec.com/route/?cc=Fury+Sliver"
       },
       "prices": {
-        "eur": "0.08"
+        "eur": "0.88"
       },
       "id": "0000579f-7b35-4ed3-b44c-db2a538066fe"
     },
@@ -72,9 +72,7 @@
       "object": "card",
       "id": "00020b05-ecb9-4603-8cc1-8cfa7a14befc",
       "oracle_id": "d96ac790-428b-4a64-8dbd-6baa73eb6210",
-      "multiverse_ids": [
-        394089
-      ],
+      "multiverse_ids": [394089],
       "tcgplayer_id": 95585,
       "cardmarket_id": 272052,
       "name": "Wildcall",
@@ -97,15 +95,9 @@
       "cmc": 2,
       "type_line": "Sorcery",
       "oracle_text": "Manifest the top card of your library, then put X +1/+1 counters on it. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)",
-      "colors": [
-        "G"
-      ],
-      "color_identity": [
-        "G"
-      ],
-      "keywords": [
-        "Manifest"
-      ],
+      "colors": ["G"],
+      "color_identity": ["G"],
+      "keywords": ["Manifest"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -129,15 +121,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "paper"
-      ],
+      "games": ["paper"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": true,
       "reprint": true,
@@ -157,9 +145,7 @@
       "flavor_text": "A howl on the wind hides many dangers.",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Adam Paquette",
-      "artist_ids": [
-        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
-      ],
+      "artist_ids": ["89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"],
       "illustration_id": "b90c25fd-2ee1-4372-89d1-fc806d01d501",
       "border_color": "black",
       "frame": "2015",
@@ -168,9 +154,7 @@
       "textless": false,
       "booster": true,
       "story_spotlight": false,
-      "promo_types": [
-        "setpromo"
-      ],
+      "promo_types": ["setpromo"],
       "edhrec_rank": 18475,
       "penny_rank": 11084,
       "prices": {
@@ -192,9 +176,7 @@
       "object": "card",
       "id": "0002ab72-834b-4c81-82b1-0d2760ea96b0",
       "oracle_id": "645b5784-a6f7-4cf3-966a-e1a51420b96b",
-      "multiverse_ids": [
-        488632
-      ],
+      "multiverse_ids": [488632],
       "mtgo_id": 81171,
       "arena_id": 72048,
       "tcgplayer_id": 215418,
@@ -221,12 +203,8 @@
       "oracle_text": "Whenever you draw your second card each turn, Mystic Skyfish gains flying until end of turn.",
       "power": "3",
       "toughness": "1",
-      "colors": [
-        "U"
-      ],
-      "color_identity": [
-        "U"
-      ],
+      "colors": ["U"],
+      "color_identity": ["U"],
       "keywords": [],
       "legalities": {
         "standard": "not_legal",
@@ -251,17 +229,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "arena",
-        "paper",
-        "mtgo"
-      ],
+      "games": ["arena", "paper", "mtgo"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -281,9 +253,7 @@
       "flavor_text": "The problem wasn't that fish had learned how to fly. It was that sharks had adapted to follow them.",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Alayna Danner",
-      "artist_ids": [
-        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
-      ],
+      "artist_ids": ["bb677b1a-ce51-4888-83d6-5a94de461ff9"],
       "illustration_id": "e553dd8e-e593-4504-82ed-cd7a6ad01a0a",
       "border_color": "black",
       "frame": "2015",
@@ -291,9 +261,7 @@
       "textless": false,
       "booster": false,
       "story_spotlight": false,
-      "promo_types": [
-        "planeswalkerdeck"
-      ],
+      "promo_types": ["planeswalkerdeck"],
       "edhrec_rank": 22516,
       "preview": {
         "source": "CBR.com",
@@ -319,9 +287,7 @@
       "object": "card",
       "id": "00030770-5e99-4943-819d-8d807c24cc14",
       "oracle_id": "56719f6a-1a6c-4c0a-8d21-18f7d7350b68",
-      "multiverse_ids": [
-        489643
-      ],
+      "multiverse_ids": [489643],
       "arena_id": 72579,
       "tcgplayer_id": 215984,
       "cardmarket_id": 472559,
@@ -346,13 +312,9 @@
       "type_line": "Basic Land — Swamp",
       "oracle_text": "({T}: Add {B}.)",
       "colors": [],
-      "color_identity": [
-        "B"
-      ],
+      "color_identity": ["B"],
       "keywords": [],
-      "produced_mana": [
-        "B"
-      ],
+      "produced_mana": ["B"],
       "legalities": {
         "standard": "legal",
         "future": "legal",
@@ -376,16 +338,11 @@
         "premodern": "legal",
         "predh": "legal"
       },
-      "games": [
-        "arena",
-        "paper"
-      ],
+      "games": ["arena", "paper"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": false,
       "reprint": true,
@@ -404,9 +361,7 @@
       "rarity": "common",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Adam Paquette",
-      "artist_ids": [
-        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
-      ],
+      "artist_ids": ["89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"],
       "illustration_id": "6b07ca0f-0cde-4798-b8f0-429f2fba450d",
       "border_color": "black",
       "frame": "2015",
@@ -455,9 +410,7 @@
       "object": "card",
       "id": "00042443-4d4e-4087-b4e5-5e781e7cc5fa",
       "oracle_id": "4fcfe370-ba33-438f-bd96-2ae560f59df9",
-      "multiverse_ids": [
-        24609
-      ],
+      "multiverse_ids": [24609],
       "mtgo_id": 14297,
       "mtgo_foil_id": 14298,
       "tcgplayer_id": 7396,
@@ -484,15 +437,9 @@
       "oracle_text": "Defender (This creature can't attack.)\n{3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.",
       "power": "2",
       "toughness": "4",
-      "colors": [
-        "B"
-      ],
-      "color_identity": [
-        "B"
-      ],
-      "keywords": [
-        "Defender"
-      ],
+      "colors": ["B"],
+      "color_identity": ["B"],
+      "keywords": ["Defender"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -516,17 +463,11 @@
         "premodern": "legal",
         "predh": "legal"
       },
-      "games": [
-        "paper",
-        "mtgo"
-      ],
+      "games": ["paper", "mtgo"],
       "reserved": false,
       "foil": true,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil",
-        "foil"
-      ],
+      "finishes": ["nonfoil", "foil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -546,9 +487,7 @@
       "flavor_text": "What wall can never be climbed, but is always scaled?\n—Nakaya riddle",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Marc Fishman",
-      "artist_ids": [
-        "d50dd2c3-34ae-4eb1-8948-cb4b38d7e4b9"
-      ],
+      "artist_ids": ["d50dd2c3-34ae-4eb1-8948-cb4b38d7e4b9"],
       "illustration_id": "65752f0f-a831-4575-a23c-daa54ac16c68",
       "border_color": "black",
       "frame": "1997",
@@ -576,9 +515,7 @@
       "object": "card",
       "id": "0005c844-787c-4f0c-8d25-85cec151642b",
       "oracle_id": "53d5d961-d6a3-49b1-b335-2c2b49972008",
-      "multiverse_ids": [
-        450637
-      ],
+      "multiverse_ids": [450637],
       "tcgplayer_id": 170970,
       "cardmarket_id": 361746,
       "name": "Whiptongue Hydra",
@@ -603,15 +540,9 @@
       "oracle_text": "Reach\nWhen Whiptongue Hydra enters the battlefield, destroy all creatures with flying. Put a +1/+1 counter on Whiptongue Hydra for each creature destroyed this way.",
       "power": "4",
       "toughness": "4",
-      "colors": [
-        "G"
-      ],
-      "color_identity": [
-        "G"
-      ],
-      "keywords": [
-        "Reach"
-      ],
+      "colors": ["G"],
+      "color_identity": ["G"],
+      "keywords": ["Reach"],
       "legalities": {
         "standard": "not_legal",
         "future": "not_legal",
@@ -635,15 +566,11 @@
         "premodern": "not_legal",
         "predh": "not_legal"
       },
-      "games": [
-        "paper"
-      ],
+      "games": ["paper"],
       "reserved": false,
       "foil": false,
       "nonfoil": true,
-      "finishes": [
-        "nonfoil"
-      ],
+      "finishes": ["nonfoil"],
       "oversized": false,
       "promo": false,
       "reprint": false,
@@ -663,9 +590,7 @@
       "flavor_text": "\"Where'd all the birds go?\"\n—Kaldrin, jungle sightseer",
       "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
       "artist": "Tomasz Jedruszek",
-      "artist_ids": [
-        "bba69285-2445-4a4b-a847-59397be972ea"
-      ],
+      "artist_ids": ["bba69285-2445-4a4b-a847-59397be972ea"],
       "illustration_id": "a5a61ad7-5d82-4a71-81f9-1500616ca2b6",
       "border_color": "black",
       "frame": "2015",
@@ -753,6 +678,23 @@
         "eur": "0.10"
       },
       "id": "E2ZmNWI"
+    },
+    {
+      "name": "Tom Bombadil",
+      "image_uris": {
+        "border_crop": "https://cards.scryfall.io/border_crop/front/2/a/2ab04c49-76a1-4896-8dca-8cb4c615f489.jpg?1686970104"
+      },
+      "type_line": "Legendary Creature — God Bard",
+      "oracle_text": "As long as there are four or more lore counters among Sagas you control, Tom Bombadil has hexproof and indestructible.\nWhenever the final chapter ability of a Saga you control resolves, reveal cards from the top of your library until you reveal a Saga card. Put that card onto the battlefield and the rest on the bottom of your library in a random order. This ability triggers only once each turn.",
+      "power": "4",
+      "toughness": "4",
+      "related_uris": {
+        "edhrec": "https://edhrec.com/route/?cc=Tom+Bombadil"
+      },
+      "prices": {
+        "eur": "6"
+      },
+      "id": "2ab04c49-76a1-4896-8dca-8cb4c615f489"
     }
   ]
 }
