@@ -60,7 +60,7 @@ export const CardsList = () => {
     } finally {
       setIsLoading(false)
     }
-  }, [selectedCardTypes, selectedSortAttribute, isSortedAscending, searchTerm])
+  }, [selectedCardTypes, selectedSortAttribute, isSortedAscending, searchTerm, cardTypes.length])
 
   useEffect(() => {
     fetchCards()
