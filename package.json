@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "eslint:fix": "eslint --fix .",
     "prettier:fix": "prettier --write .",
+    "prettier:check": "prettier --check .",
     "prepare": "husky install"
   },
   "dependencies": {
