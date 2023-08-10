@@ -4,7 +4,7 @@ Proliferate is a React single-page application (SPA) project developed for exerc
 
 ## Features
 
--	**CRUD operations on a list of cards**
+- **CRUD operations on a list of cards**
 - **Dialog modals**
 - **Form validations**
 - **Error, Loading, and Empty States**: Used Skeleton loaders and spinners to indicate ongoing background operations. In addition to loading states, there are error states, empty states and ‘Not fetched yet’ states
@@ -30,9 +30,9 @@ Proliferate is a React single-page application (SPA) project developed for exerc
 ## Deployment
 
 1. Clone the repository
-2. Install the required dependencies using ``` npm install ```
-3. Start the project using ``` npm start ```
+2. Install the required dependencies using `npm install`
+3. Start the project using `npm start`
 
-## Author:
+## Author
 
-- Victor Getsov - https://github.com/vgetsov
+- Victor Getsov - <https://github.com/vgetsov>
