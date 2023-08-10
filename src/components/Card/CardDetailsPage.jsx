@@ -40,7 +40,7 @@ export const CardDetailsPage = () => {
     } finally {
       setIsLoading(false)
     }
-  }, [])
+  }, [id])
 
   useEffect(() => {
     fetchSingleCard()
