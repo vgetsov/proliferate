@@ -29,6 +29,12 @@ Proliferate is a React single-page application (SPA) project developed for exerc
 
 ## Deployment
 
+The project is deployed on render.com:
+
+<https://proliferate.onrender.com/>
+
+Or you can start it locally on your machine:
+
 1. Clone the repository
 2. Install the required dependencies using `npm install`
 3. Start the project using `npm start`
