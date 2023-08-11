@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "^18"
+  },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run dev\"",
     "server": "json-server --watch db.json --delay 500",
