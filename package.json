@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run dev\"",
-    "server": "json-server --watch db.json --delay 500",
+    "server": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
